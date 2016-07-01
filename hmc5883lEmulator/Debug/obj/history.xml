@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wall -ffunction-sections -g -O0 -fno-common -fmessage-length=0 -Wall -fno-strict-aliasing -fno-rtti -fno-exceptions -ffunction-sections -fdata-sections -std=gnu++98 -c -DMBED_BUILD_TIMESTAMP=1467289148.25 -DTARGET_RTOS_M4_M7 -DTARGET_FF_ARDUINO -DTOOLCHAIN_GCC_ARM -DTARGET_NUCLEO_F411RE -D__CORTEX_M4 -DTARGET_LIKE_MBED -DTARGET_CORTEX_M -D__FPU_PRESENT=1 -DTARGET_LIKE_CORTEX_M4 -DTARGET_M4 -D__MBED__=1 -DTARGET_STM -DTARGET_STM32F4 -DTARGET_FF_MORPHO -DTOOLCHAIN_GCC -DTARGET_STM32F411RE -DARM_MATH_CM4 -DSTM32F415VG -DSTM32F4XX -IE:\HopeProject\minecraft\hmc5883lEmulator\BufferedSerial -IE:\HopeProject\minecraft\hmc5883lEmulator\myLib -IE:\HopeProject\minecraft\hmc5883lEmulator\RBTRS232Protocol -IE:\HopeProject -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed\TARGET_NUCLEO_F411RE\TARGET_STM -IE:\HopeProject\minecraft\hmc5883lEmulator\BufferedSerial\Buffer -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed\TARGET_NUCLEO_F411RE\TOOLCHAIN_GCC_ARM -IE:\HopeProject\minecraft\hmc5883lEmulator\myLib\stm32f4 -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed\TARGET_NUCLEO_F411RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F411RE -IE:\HopeProject\minecraft\hmc5883lEmulator\i2cSlave -IE:\HopeProject\minecraft -IE:\HopeProject\minecraft\hmc5883lEmulator\greatest -IE:\HopeProject\minecraft\hmc5883lEmulator\imuOdometry -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed\TARGET_NUCLEO_F411RE -IE:\HopeProject\minecraft\hmc5883lEmulator\myLib\CRC -IE:\HopeProject\minecraft\hmc5883lEmulator\myLib\FSM -IE:\HopeProject\minecraft\hmc5883lEmulator -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed\TARGET_NUCLEO_F411RE\TARGET_STM\TARGET_STM32F4">
+      <target file="cAssert.o" lastModified="155a59d8957">
+         <source file="..\..\..\myLib\cAssert.c" lastModified="155a029b38c"/>
+      </target>
+      <target file="cInternalStateReport.o" lastModified="155a59d8bb0">
+         <source file="..\..\..\myLib\cInternalStateReport.c" lastModified="155a029b3de"/>
+      </target>
+      <target file="I2CSlave1.o" lastModified="155a658529a">
+         <source file="..\..\..\i2cSlave\I2CSlave1.cpp" lastModified="155a6584667"/>
+      </target>
+      <target file="crc.o" lastModified="155a59d8da6">
+         <source file="..\..\..\myLib\CRC\crc.c" lastModified="155a029b380"/>
+      </target>
+      <target file="cRBTRS232ProtocolWrapper.o" lastModified="155a614fd00">
+         <source file="..\..\..\RBTRS232Protocol\cRBTRS232ProtocolWrapper.cpp" lastModified="155a4c4fb85"/>
+      </target>
+      <target file="TestcIMUOdometry.o" lastModified="155a6606343">
+         <source file="..\..\..\imuOdometry\TestcIMUOdometry.cpp" lastModified="155a66056c5"/>
+      </target>
+      <target file="testTelemetry.o" lastModified="155a59d9098">
+         <source file="..\..\..\myLib\testTelemetry.c" lastModified="155a029b9fb"/>
+      </target>
+      <target file="BufferedSerial.o" lastModified="155a59d869a">
+         <source file="..\..\..\BufferedSerial\BufferedSerial.cpp" lastModified="155a4c4fb21"/>
+      </target>
+      <target file="FSM.o" lastModified="155a59d8a84">
+         <source file="..\..\..\myLib\FSM\FSM.c" lastModified="155a029b386"/>
+      </target>
+      <target file="TestcEncoder.o" lastModified="155a658149e">
+         <source file="..\..\..\myLib\TestcEncoder.cpp" lastModified="155a029b38b"/>
+      </target>
+      <target file="generalUtility.o" lastModified="155a614f907">
+         <source file="..\..\..\myLib\generalUtility.c" lastModified="155a07424bb"/>
+      </target>
+      <target file="TestcFrameMsgGetter.o" lastModified="155a59d86fe">
+         <source file="..\..\..\myLib\TestcFrameMsgGetter.c" lastModified="155a4c4fb66"/>
+      </target>
+      <target file="TestCRC.o" lastModified="155a59d8c15">
+         <source file="..\..\..\myLib\CRC\TestCRC.c" lastModified="155a029b37c"/>
+      </target>
+      <target file="stm32f4xx_it.o" lastModified="155a6581c66">
+         <source file="..\..\..\stm32f4xx_it.c" lastModified="155a60fe656"/>
+      </target>
+      <target file="cFrameMsgGetter.o" lastModified="155a59d8903">
+         <source file="..\..\..\myLib\cFrameMsgGetter.c" lastModified="155a2b62122"/>
+      </target>
+      <target file="cRingBuffer.o" lastModified="155a59d85e1">
+         <source file="..\..\..\myLib\cRingBuffer.c" lastModified="155a029b3e0"/>
+      </target>
+      <target file="cDebugUart.o" lastModified="155a59d880b">
+         <source file="..\..\..\myLib\stm32f4\cDebugUart.c" lastModified="155a029b9e2"/>
+      </target>
+      <target file="MyBuffer.o" lastModified="155a59d8e5e">
+         <source file="..\..\..\BufferedSerial\Buffer\MyBuffer.cpp" lastModified="155a1401a83"/>
+      </target>
+      <target file="cEncoder.o" lastModified="155a6581a90">
+         <source file="..\..\..\myLib\cEncoder.c" lastModified="155a029b3c9"/>
+      </target>
+      <target file="cIMUOdometry.o" lastModified="155a6193960">
+         <source file="..\..\..\imuOdometry\cIMUOdometry.cpp" lastModified="155a5ca93a8"/>
+      </target>
+      <target file="main.o" lastModified="155a65c1939">
+         <source file="..\..\..\main.cpp" lastModified="155a65c0ea4"/>
+      </target>
+      <target file="TestcRBTRS232ProtocolWrapper.o" lastModified="155a6581d1f">
+         <source file="..\..\..\RBTRS232Protocol\TestcRBTRS232ProtocolWrapper.cpp" lastModified="1553fa71b77"/>
+      </target>
+   </processor>
+</history>

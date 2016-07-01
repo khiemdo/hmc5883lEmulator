@@ -1,0 +1,72 @@
+#ifndef         _cRBTRS232ProtocolWrapper_h
+#define         _cRBTRS232ProtocolWrapper_h
+
+#include "BufferedSerial.h"
+
+typedef enum {
+	GET_CHANNEL_COUNTER_RBTProtocol,
+	SET_CHANNEL_COUNTER_RBTProtocol,
+	GET_CHANNEL_RPM_RBTProtocol,
+	GET_CHANNEL_NORMINALSP_RBTProtocol,
+	SET_CHANNEL_RPM_RBTProtocol,
+	SET_ESTOP_RBTProtocol,
+	REALEASE_ESTOP_RBTProtocol,
+	GET_MOTOR_COMMAND_RBTProtocol,
+	SET_MOTOR_COMMAND_RBTProtocol,
+	GET_CONFIG_OPERATINGMODE_RBTProtocol,
+	GET_CONFIG_ANA_CENTER_RBTProtocol,
+	GET_CONFIG_ANA_DEADBAND_RBTProtocol,
+	GET_CONFIG_ANA_ACTION_RBTProtocol,
+	GET_CONFIG_ANA_LINEARITY_RBTProtocol,
+	GET_CONFIG_ANA_MAX_RBTProtocol,
+	GET_CONFIG_ANA_ACTION_MAX_RBTProtocol,
+	GET_CONFIG_ANA_MIN_RBTProtocol,
+	GET_CONFIG_ANA_ACTION_MIN_RBTProtocol,
+	GET_CONFIG_ANA_MODE_RBTProtocol,
+	GET_CONFIG_ANA_POLARITY_RBTProtocol,
+	GET_CONFIG_PWM_CENTER_RBTProtocol,
+	GET_CONFIG_PWM_DEADBAND_RBTProtocol,
+	GET_CONFIG_PWM_ACTION_RBTProtocol,
+	GET_CONFIG_PWM_LINEARITY_RBTProtocol,
+	GET_CONFIG_PWM_MAX_RBTProtocol,
+	GET_CONFIG_PWM_ACTION_MAX_RBTProtocol,
+	GET_CONFIG_PWM_MIN_RBTProtocol,
+	GET_CONFIG_PWM_ACTION_MIN_RBTProtocol,
+	GET_CONFIG_PWM_MODE_RBTProtocol,
+	GET_CONFIG_PWM_POLARITY_RBTProtocol,
+
+	SET_CONFIG_OPERATINGMODE_RBTProtocol,
+	SET_CONFIG_ANA_CENTER_RBTProtocol,
+	SET_CONFIG_ANA_DEADBAND_RBTProtocol,
+	SET_CONFIG_ANA_ACTION_RBTProtocol,
+	SET_CONFIG_ANA_LINEARITY_RBTProtocol,
+	SET_CONFIG_ANA_MAX_RBTProtocol,
+	SET_CONFIG_ANA_ACTION_MAX_RBTProtocol,
+	SET_CONFIG_ANA_MIN_RBTProtocol,
+	SET_CONFIG_ANA_ACTION_MIN_RBTProtocol,
+	SET_CONFIG_ANA_MODE_RBTProtocol,
+	SET_CONFIG_ANA_POLARITY_RBTProtocol,
+	SET_CONFIG_PWM_CENTER_RBTProtocol,
+	SET_CONFIG_PWM_DEADBAND_RBTProtocol,
+	SET_CONFIG_PWM_ACTION_RBTProtocol,
+	SET_CONFIG_PWM_LINEARITY_RBTProtocol,
+	SET_CONFIG_PWM_MAX_RBTProtocol,
+	SET_CONFIG_PWM_ACTION_MAX_RBTProtocol,
+	SET_CONFIG_PWM_MIN_RBTProtocol,
+	SET_CONFIG_PWM_ACTION_MIN_RBTProtocol,
+	SET_CONFIG_PWM_MODE_RBTProtocol,
+	SET_CONFIG_PWM_POLARITY_RBTProtocol,
+	GET_CONFIG_COMMAND_PRIORITY_RBTProtocol,
+	SET_CONFIG_COMMAND_PRIORITY_RBTProtocol,
+	NUMBER_OF_MSG_RBTProtocol
+} RBTProtocol;
+
+int32_t SendMsg_cRBTRS232ProtocolWrapper(BufferedSerial* port,
+		int32_t protocolIndex, int32_t para1, int32_t para2);
+int32_t HandleRBTMsg_cRBTRS232ProtocolWrapper(BufferedSerial* port,
+		int32_t protocolIndex, int32_t* para1, int8_t * chBuff);
+int32_t WaitAck_cRBTRS232ProtocolWrapper(BufferedSerial* port,
+		int32_t protocolIndex, int32_t* para1, int8_t * buff);
+int32_t WaitAck_cRBTRS232ProtocolWrapper1(int8_t * buff, int32_t buffLength,
+		int32_t protocolIndex, int32_t* para1);
+#endif /* ifndef         _cRingBuffer_h */
