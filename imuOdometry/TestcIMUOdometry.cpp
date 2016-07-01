@@ -22,18 +22,21 @@ void Setup_TestcIMUOdometry(void* data) {
 	me->frameGetter = &frameGetter_IMUOdometry;
 	me->inCom = &rbtSerial;
 	me->inCom->baud(115200);
+
 	me->outCom = &i2cCom;
 	me->outCom->frequency(HMC5883L_I2C_FREQUENCY);
 	me->outCom->address(HMC5883L_I2C_ADDRESS);
+
 	me->wheelBase = WHEEL_BASE;
-	me->outCom1 = &I2CxHandle;
-	i2c1Config(me->outCom1);
+
+//	me->outCom1 = &I2CxHandle;
+//	i2c1Config(me->outCom1);
 
 }
-TEST TestI2CPort_cIMUOdometry2(){
+TEST TestI2CPort_cIMUOdometry2() {
 	cIMUOdometry* me = &imuOdometry;
-	uint8_t data[10]={0};
-	HAL_I2C_Master_Transmit(me->outCom1,0X1E,data,1,100);
+	uint8_t data[10] = { 0 };
+	HAL_I2C_Master_Transmit(me->outCom1, 0X1E, data, 1, 100);
 }
 TEST TestI2CPort_cIMUOdometry() {
 	cIMUOdometry* me = &imuOdometry;
@@ -45,8 +48,8 @@ TEST TestI2CPort_cIMUOdometry() {
 		int number = 0;
 		I2CSlave* i2cPtr = me->outCom;
 		int receiveFlag = i2cPtr->receive();
-		uint8_t data[10]={0};
-		i2cPtr->write((char*) data, 1);
+//		uint8_t data[10]={0};
+//		i2cPtr->write((char*) data, 1);
 		switch (receiveFlag) {
 		case I2CSlave::ReadAddressed:
 			DEBUG(LOG_TEST, "rqI2CRead\r\n", 0);
@@ -63,25 +66,18 @@ TEST TestI2CPort_cIMUOdometry() {
 			i2cPtr->write((char*) msgBuff, index);
 			break;
 		case I2CSlave::WriteAddressed:
-			i2cPtr->read((char*) msgBuff, 30);
-			DEBUG(LOG_TEST, "got msg:%d,%d,%d,%d,%d\r\n",
-					msgBuff[0], msgBuff[1], msgBuff[2], msgBuff[3], msgBuff[4], msgBuff[5]);
+			i2cPtr->read((char*) msgBuff, 2);
+
+//			wait_ms(10);
+//			(I2C1->SR1) = I2C1->SR1 &(~(I2C_SR1_STOPF));
+//			(I2C1->SR1) = 0;
+
+//			DEBUG(LOG_TEST, "got msg:%d,%d,%d,%d,%d\r\n",
+//					msgBuff[0], msgBuff[1], msgBuff[2], msgBuff[3], msgBuff[4], msgBuff[5]);
 			break;
 		case I2CSlave::NoData:
-			break;
-		default:
-			DEBUG(LOG_TEST, "flag:%d\r\n", receiveFlag);
-			index = 0;
-			number = (int) me->XOutput;
-			msgBuff[index++] = (uint8_t)(((number & 0xffff) >> 8) & 0xff);
-			msgBuff[index++] = (uint8_t)(((number & 0xffff)) & 0xff);
-			number = (int) me->ZOutput;
-			msgBuff[index++] = (uint8_t)(((number & 0xffff) >> 8) & 0xff);
-			msgBuff[index++] = (uint8_t)(((number & 0xffff)) & 0xff);
-			number = (int) me->YOutput;
-			msgBuff[index++] = (uint8_t)(((number & 0xffff) >> 8) & 0xff);
-			msgBuff[index++] = (uint8_t)(((number & 0xffff)) & 0xff);
-			i2cPtr->write((char*) msgBuff, index);
+			(I2C1->SR1) = I2C1->SR1 &(~(I2C_SR1_RXNE));
+//			i2cPtr->stop();
 			break;
 		}
 	}
@@ -164,7 +160,7 @@ TEST TestSendXYZ_cIMUOdometry();
 
 SUITE(TestSuitecIMUOdometry)
 {
-	Setup_TestcIMUOdometry (NULL);
+	Setup_TestcIMUOdometry(NULL);
 	RUN_TEST(TestI2CPort_cIMUOdometry);
 //	RUN_TEST(TestI2CPort_cIMUOdometry2);
 //	RUN_TEST(TestSerialPort_cIMUOdometry);

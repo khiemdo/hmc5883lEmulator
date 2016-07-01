@@ -9,7 +9,6 @@
 #include "I2CSlave.h"
 
 I2C_HandleTypeDef I2CxHandle;
-I2C i2cMaster;
 I2CSlave i2cCom(I2C1_SDA, I2C1_SCL);
 BufferedSerial rbtSerial(SERIAL_RBT_TX, SERIAL_RBT_RX, 512);
 BufferedSerial debugSerial(USBTX, USBRX, 2048, 10, 0);
