@@ -7,10 +7,12 @@
 #include "main.h"
 
 extern I2C_HandleTypeDef I2CxHandle;
-extern volatile int32_t i2cFlag;
-extern uint8_t txI2cBuffer[10];
-extern uint8_t rxI2cBuffer[10];
-extern I2CSlave i2cCom;
+extern int32_t i2cDataIndex;
+extern uint8_t memory[HMC5883L_TOTAL_REGISTER];
+extern int32_t i2cState;
+
+extern uint8_t memory[HMC5883L_TOTAL_REGISTER];
+
 extern BufferedSerial rbtSerial;
 extern BufferedSerial debugSerial;
 extern cIMUOdometry imuOdometry;
@@ -26,15 +28,20 @@ void Setup_TestcIMUOdometry(void* data) {
 	me->inCom = &rbtSerial;
 	me->inCom->baud(115200);
 
-//	me->outCom = &i2cCom;
-//	me->outCom->frequency(HMC5883L_I2C_FREQUENCY);
-//	me->outCom->address(HMC5883L_I2C_ADDRESS);
-
 	me->wheelBase = WHEEL_BASE;
 
 	me->outCom1 = &I2CxHandle;
 	i2c1Config(me->outCom1);
 
+	memset(memory, 0, HMC5883L_TOTAL_REGISTER);
+	memory[10] = 0x48;
+	memory[11] = 0x34;
+	memory[12] = 0x33;
+	i2cDataIndex = 0;
+	me->memory = memory;
+	me->i2cDataIndex = &i2cDataIndex;
+	me->i2cState = &i2cState;
+	me->sizeMemory = HMC5883L_TOTAL_REGISTER;
 }
 
 TEST TestI2CPort_cIMUOdometry() {
@@ -54,7 +61,6 @@ TEST TestI2CPort_cIMUOdometry() {
 }
 TEST TestSerialPort_cIMUOdometry() {
 	int test = 0;
-	printf("helloworld\r\n");
 	cIMUOdometry* me = &imuOdometry;
 	me->inCom->printf("?C\r");
 	wait_us(100);
@@ -97,8 +103,8 @@ void DebugLog_cIMUOdometry(cIMUOdometry* me) {
 		DEBUG(LOG_DEBUG, "c=%d:%d\r\n", me->counter[0], me->counter[1]);
 		char myBuff[100];
 		sprintf(myBuff, "o=%d,%d,%d,%d\r\n", (int32_t) me->thetaDegree,
-				(int32_t) me->distance, (int32_t) (me->XOutput),
-				(int32_t) (me->YOutput));
+				(int32_t) me->distance, (int32_t)(me->XOutput),
+				(int32_t)(me->YOutput));
 		DEBUG(LOG_DEBUG, myBuff, 0);
 		lastTime = currentTime;
 	}
@@ -113,8 +119,6 @@ TEST TestConvertCounterToXYZ_cIMUOdometry() {
 		int deltaTime = currentTime - lastTime;
 		if (deltaTime > 1000) {
 			me->inCom->printf("?C\r");
-			if (numberOfLoops++ > 100)
-				break;
 			lastTime = currentTime;
 		}
 		Loop_cIMUOdometry(me);
@@ -122,64 +126,14 @@ TEST TestConvertCounterToXYZ_cIMUOdometry() {
 	}
 	PASS();
 }
-TEST TestHandleMasterMsg_cIMUOdometry() {
-	cIMUOdometry* me = &imuOdometry;
-	HAL_StatusTypeDef ret = HAL_ERROR;
-	int loopNumber = 100;
-//	txI2cBuffer[0] = 0x48;
-//	HAL_StatusTypeDef ret = HAL_I2C_Slave_Transmit_IT(me->outCom1, txI2cBuffer,
-//			1);
-	while (1) {
-		if (HAL_I2C_GetState(&I2CxHandle) == HAL_I2C_STATE_READY) {
-			ret = HAL_I2C_Slave_Receive_IT(me->outCom1,
-					rxI2cBuffer, 1);
-			if (ret = HAL_BUSY) {
-				//request read from master
-				if (__HAL_I2C_GET_FLAG(me->outCom1,I2C_FLAG_TRA) == 1) {
-					switch (rxI2cBuffer[0]) {
-					case HMC5883L_IDENT_A:
-						if (HAL_I2C_GetState(me->outCom1)
-								== HAL_I2C_STATE_BUSY_TX) { //got read request
-							txI2cBuffer[0] = 0x48;
-							ret = HAL_I2C_Slave_Transmit_IT(me->outCom1,
-									txI2cBuffer, 1);
-						} //todo: else write to config
-					case HMC5883L_IDENT_B:
-						if (HAL_I2C_GetState(me->outCom1)
-								== HAL_I2C_STATE_BUSY_TX) { //got read request
-							txI2cBuffer[0] = 0x34;
-							ret = HAL_I2C_Slave_Transmit_IT(me->outCom1,
-									txI2cBuffer, 1);
-						}
-						break;
-					case HMC5883L_IDENT_C:
-						if (HAL_I2C_GetState(me->outCom1)
-								== HAL_I2C_STATE_BUSY_TX) { //got read request
-							txI2cBuffer[0] = 0x33;
-							ret = HAL_I2C_Slave_Transmit_IT(me->outCom1,
-									txI2cBuffer, 1);
-						}
-						break;
-					}
-				}
-			} else if (ret == HAL_OK) { //request write
-				if (__HAL_I2C_GET_FLAG(me->outCom1,I2C_FLAG_ADDR) == 1) {
-					DEBUG(LOG_TEST, "rqWriteAddr:%d\r\n", rxI2cBuffer[0]);
-				}
-			}
-
-			break;
-		}
-	}
-}
+TEST TestHandleMasterMsg_cIMUOdometry();
 TEST TestSendXYZ_cIMUOdometry();
 
 SUITE(TestSuitecIMUOdometry)
 {
-	Setup_TestcIMUOdometry(NULL);
+	Setup_TestcIMUOdometry (NULL);
 //	RUN_TEST(TestI2CPort_cIMUOdometry);
 //	RUN_TEST(TestSerialPort_cIMUOdometry);
 //	RUN_TEST(TestHandleRBTSerial_cIMUOdometry);
-//	RUN_TEST(TestConvertCounterToXYZ_cIMUOdometry);
-	RUN_TEST(TestHandleMasterMsg_cIMUOdometry);
+	RUN_TEST(TestConvertCounterToXYZ_cIMUOdometry);
 }

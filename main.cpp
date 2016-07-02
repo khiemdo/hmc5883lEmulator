@@ -8,10 +8,9 @@
 #include "math.h"
 
 I2C_HandleTypeDef I2CxHandle;
-volatile uint32_t i2cFlag;
-uint8_t txI2cBuffer[10];
-uint8_t rxI2cBuffer[10];
-//I2CSlave i2cCom(I2C1_SDA, I2C1_SCL);
+int32_t i2cDataIndex;
+uint8_t memory[HMC5883L_TOTAL_REGISTER];
+int32_t i2cState;
 BufferedSerial rbtSerial(SERIAL_RBT_TX, SERIAL_RBT_RX, 512);
 BufferedSerial debugSerial(USBTX, USBRX, 2048, 10, 0);
 cIMUOdometry imuOdometry;
@@ -33,15 +32,4 @@ int main(int argc, char **argv) {
 	greatest_info.verbosity++;
 	RUN_SUITE(TestSuitecIMUOdometry);
 	GREATEST_MAIN_END();
-}
-
-void HAL_I2C_SlaveTxCpltCallback(I2C_HandleTypeDef *hi2c) {
-	if (hi2c->Instance == I2C1) {
-		I2C1_SlaveTxCpltCallback_cIMUOdometry(&imuOdometry);
-	}
-}
-void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c) {
-	if (hi2c->Instance == I2C1) {
-		I2C1_SlaveRxCpltCallback_cIMUOdometry(&imuOdometry);
-	}
 }

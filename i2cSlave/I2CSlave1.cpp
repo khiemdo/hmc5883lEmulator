@@ -12,7 +12,7 @@ void i2c1Config(I2C_HandleTypeDef* I2CxHandle) {
 	/* I2C TX GPIO pin configuration  */
 	GPIO_InitStruct.Pin = I2Cx_SCL_PIN;
 	GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
-	GPIO_InitStruct.Pull = GPIO_PULLUP;
+	GPIO_InitStruct.Pull = GPIO_NOPULL;
 	GPIO_InitStruct.Speed = GPIO_SPEED_FAST;
 	GPIO_InitStruct.Alternate = I2Cx_SCL_AF;
 
@@ -33,8 +33,8 @@ void i2c1Config(I2C_HandleTypeDef* I2CxHandle) {
 	I2CxHandle->Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
 	I2CxHandle->Init.OwnAddress1 = I2C_ADDRESS;
 	I2CxHandle->Init.OwnAddress2 = 0;
-	REQUIRE(HAL_I2C_Init(I2CxHandle) != HAL_OK);
-
+	I2CxHandle->Mode = HAL_I2C_MODE_SLAVE;
+	REQUIRE(HAL_I2C_Init(I2CxHandle) == HAL_OK);
 
 	/*##-4- Configure the NVIC for I2C #########################################*/
 	/* NVIC for I2C1 */
@@ -42,4 +42,8 @@ void i2c1Config(I2C_HandleTypeDef* I2CxHandle) {
 	HAL_NVIC_EnableIRQ(I2Cx_ER_IRQn);
 	HAL_NVIC_SetPriority(I2Cx_EV_IRQn, 2, 0);
 	HAL_NVIC_EnableIRQ(I2Cx_EV_IRQn);
+	__HAL_I2C_ENABLE_IT(I2CxHandle, I2C_IT_BUF);
+	__HAL_I2C_ENABLE_IT(I2CxHandle, I2C_IT_EVT);
+	__HAL_I2C_ENABLE_IT(I2CxHandle, I2C_IT_ERR);
+	I2C1->CR1 |= I2C_CR1_ACK;
 }

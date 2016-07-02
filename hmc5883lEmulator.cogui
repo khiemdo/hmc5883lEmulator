@@ -4,8 +4,8 @@
 <window>
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.debug.ui.ExpressionView"/>
-<orientation position="512" view="org.eclipse.debug.ui.RegisterView"/>
 <orientation position="512" view="org.coocox.codebugger.trace.ui.traceview"/>
+<orientation position="512" view="org.eclipse.debug.ui.RegisterView"/>
 <orientation position="512" view="org.eclipse.debug.ui.VariableView"/>
 </fastViewData>
 <perspectiveBar/>
@@ -14,15 +14,75 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" partName="stm32f4xx_it.c" path="E:/HopeProject/minecraft/hmc5883lEmulator/stm32f4xx_it.c" title="stm32f4xx_it.c" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/stm32f4xx_it.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/stm32f4xx_it.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="616" selectionTopPixel="380"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="TestcIMUOdometry.cpp" partName="TestcIMUOdometry.cpp" path="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp" title="TestcIMUOdometry.cpp" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1860" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="cIMUOdometry.cpp" partName="cIMUOdometry.cpp" path="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp" title="cIMUOdometry.cpp" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2237" selectionTopPixel="580"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="cIMUOdometry.h" partName="cIMUOdometry.h" path="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/cIMUOdometry.h" title="cIMUOdometry.h" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/cIMUOdometry.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="294" selectionTopPixel="150"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="I2CSlave1.cpp" partName="I2CSlave1.cpp" path="E:/HopeProject/minecraft/hmc5883lEmulator/i2cSlave/I2CSlave1.cpp" title="I2CSlave1.cpp" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/i2cSlave/I2CSlave1.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/i2cSlave/I2CSlave1.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="685" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+</viewState>
+</view>
+<view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.ui.typeHierarchy" partName="Type Hierarchy">
+<viewState filterFields="false" filterNonPublic="false" filterStatic="false" showFilesInLabels="false" showInheritedMembers="false" splitterWeight1="350" splitterWeight2="650" viewOrientation="0"/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" partName="Memory Browser">
+<viewState>
+<MemoryBroser ComboItemsValue="0x200003ac;" FocuseTabIndex="0" TabsValue="" TextValue="0x200003ac" horizontalPosition="0" verticalPosition="0"/>
+</viewState>
+</view>
+<view id="org.coocox.coassistant.view.CoAssistantView_debug" partName="Peripherals">
+<viewState horizontalPosition="0" verticalPosition="25">
+<selection>
+<element name="I2C1"/>
+</selection>
+<registerValues baseAddress="Base Address: 0x40005400" description="Description:  I2C1 event interrupt"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
 <view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
 <viewState>
-<ExpressionKeySet ExpKeys="i2cPtr,"/>
+<ExpressionKeySet ExpKeys="I2CxHandle,~(0x10) &amp; 0b00010000,i2cDataIndex,memory[i2cDataIndex],"/>
 </viewState>
 </view>
 <view id="org.coocox.component.ui.ComponentView" partName="Components">
@@ -33,49 +93,30 @@
 <expanded>
 <element path="/hmc5883lEmulator"/>
 <element path="/hmc5883lEmulator/headers"/>
+<element path="/hmc5883lEmulator/i2cSlave"/>
 <element path="/hmc5883lEmulator/imuOdometry"/>
-<element path="/hmc5883lEmulator/sources"/>
 </expanded>
 <selection>
-<element path="/hmc5883lEmulator/i2cSlave"/>
+<element path="/hmc5883lEmulator/i2cSlave/I2CSlave1.cpp"/>
 </selection>
 </viewState>
-</view>
-<view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
-<viewState/>
-</view>
-<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
-<viewState isPinned="false">
-<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
-</viewState>
-</view>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
-<view id="org.eclipse.cdt.ui.typeHierarchy" partName="Type Hierarchy">
-<viewState filterFields="false" filterNonPublic="false" filterStatic="false" showFilesInLabels="false" showInheritedMembers="false" splitterWeight1="350" splitterWeight2="650" viewOrientation="0"/>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
-<view id="org.coocox.coassistant.view.CoAssistantView_debug" partName="Peripherals">
+<view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view" partName="Disassembly">
+<viewState disassembly.syncActiveContext="true" disassembly.trackExpression="false"/>
+</view>
+<view id="org.coocox.coassistant.view.CoAssistantView" partName="Peripherals">
 <viewState horizontalPosition="0" verticalPosition="36">
-<selection>&#x0A;<element name="I2C1"/>
+<selection>
+<element name="I2C1"/>
 </selection>
 <registerValues baseAddress="Base Address: 0x40005400" description="Description:  I2C1 event interrupt"/>
 </viewState>
 </view>
-<view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view" partName="Disassembly">
-<viewState disassembly.syncActiveContext="true" disassembly.trackExpression="false"/>
-</view>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
-<viewState/>
-</view>
 </views>
-<perspectives activePart="org.coocox.builder.ui.views.ProjectView" activePerspective="org.coocox.builder.perspective.CoBuilder">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.coocox.builder.ui.PerspectiveCoBuilder" id="org.coocox.builder.perspective.CoBuilder" label="CooCox CoBuilder"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
@@ -109,6 +150,7 @@
 <view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.cdt.ui.typeHierarchy"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
+<view id="org.coocox.coassistant.view.CoAssistantView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@b587e9" orientation="256" selectedTabId="org.coocox.component.ui.ComponentView" style="0">
 <fastViews>
@@ -142,15 +184,17 @@
 </presentation>
 </folder>
 </info>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.24335814" ratioLeft="458" ratioRight="1424" relationship="2" relative="org.eclipse.ui.internal.ViewStack@b587e9"/>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.18809777" ratioLeft="354" ratioRight="1528" relationship="2" relative="org.eclipse.ui.internal.ViewStack@b587e9"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@157a7ec" ratio="0.71983916" ratioLeft="1074" ratioRight="418" relationship="2" relative="org.coocox.builder.ui.exampleView">
-<folder appearance="2" expanded="2">
+<folder activePageID="org.coocox.coassistant.view.CoAssistantView" appearance="2" expanded="2">
+<page content="org.coocox.coassistant.view.CoAssistantView" label="Peripherals"/>
 <page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
-<page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
 <page content="org.coocox.builder.ui.MoreExampleView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.44979507" ratioLeft="439" ratioRight="537" relationship="4" relative="org.coocox.builder.ui.exampleView"/>
@@ -214,6 +258,7 @@
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.coocox.codebugger.trace.ui.traceview"/>
 <view id="org.eclipse.search.ui.views.SearchView"/>
+<view id="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser"/>
 <view id="org.coocox.coassistant.view.CoAssistantView_debug"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view"/>
@@ -221,103 +266,274 @@
 <view id="org.coocox.builder.ui.views.ProjectView"/>
 <fastViewBars/>
 <viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@71ba55">&#x0A;<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@71ba55">
+<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">
+<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.internal.ViewStack@71ba55">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="org.eclipse.ui.internal.ViewStack@71ba55">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f4a667" ratio="0.69979507" ratioLeft="683" ratioRight="293" relationship="4" relative="org.eclipse.ui.internal.ViewStack@71ba55">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1f4a667" ratio="0.69979507" ratioLeft="683" ratioRight="293" relationship="4" relative="org.eclipse.ui.internal.ViewStack@71ba55">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@d8c38e" ratio="0.37663698" ratioLeft="719" ratioRight="1190" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1f4a667">&#x0A;<folder activePageID="org.eclipse.search.ui.views.SearchView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@d8c38e" ratio="0.37663698" ratioLeft="719" ratioRight="1190" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1f4a667">
+<folder activePageID="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" appearance="2" expanded="2">
+<page content="org.coocox.codebugger.trace.ui.traceview" label="Semihosting"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
+<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="Memory Browser"/>
 <page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
-<page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@10eb495" ratio="0.75432163" ratioLeft="1440" ratioRight="469" relationship="2" relative="org.eclipse.ui.internal.ViewStack@71ba55">&#x0A;<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.coassistant.view.CoAssistantView_debug" label="Peripherals"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@10eb495" ratio="0.71608174" ratioLeft="1367" ratioRight="542" relationship="2" relative="org.eclipse.ui.internal.ViewStack@71ba55">
+<folder activePageID="org.coocox.coassistant.view.CoAssistantView_debug" appearance="2" expanded="2">
+<page content="org.coocox.coassistant.view.CoAssistantView_debug" label="Peripherals"/>
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="Disassembly"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="1"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="1"/>
 <part id="0"/>
 <part id="2"/>
 <part id="3"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.19693807" ratioLeft="283" ratioRight="1154" relationship="2" relative="org.eclipse.ui.internal.ViewStack@71ba55"/>
+<info part="org.eclipse.ui.editorss" ratio="0.1848465" ratioLeft="283" ratioRight="1248" relationship="2" relative="org.eclipse.ui.internal.ViewStack@71ba55"/>
 </mainWindow>
 </layout>
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/stm32f4xx_it.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/sources/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/stm32f4xx_it.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f4xx_hal_i2c.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/sources/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/sources/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/sources/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/sources/main.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/i2cSlave/I2CSlave1.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f4xx_hal_gpio.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/sources/main.cpp"/>
+</editors>
+<item historyLabel="stm32f4xx_it.c" index="0">
+<position info="not_deleted" x="1573" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="0">
+<position info="not_deleted" x="1628" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="0">
+<position info="not_deleted" x="1106" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="0">
+<position info="not_deleted" x="1256" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="0">
+<position info="not_deleted" x="1549" y="0"/>
+</item>
+<item historyLabel="TestcIMUOdometry.cpp" index="1">
+<position info="not_deleted" x="3082" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="2">
+<position/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="1438" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="2">
+<position/>
+</item>
+<item historyLabel="TestcIMUOdometry.cpp" index="1">
+<position info="not_deleted" x="1860" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="805" y="0"/>
+</item>
+<item historyLabel="TestcIMUOdometry.cpp" index="1">
+<position info="not_deleted" x="1860" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="702" y="18"/>
+</item>
+<item historyLabel="stm32f4xx_hal_i2c.h" index="4">
+<position/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="702" y="18"/>
+</item>
+<item historyLabel="stm32f4xx_hal_i2c.h" index="4">
+<position/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="1119" y="18"/>
+</item>
+<item historyLabel="stm32f4xx_hal_i2c.h" index="4">
+<position info="not_deleted" x="18288" y="18"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="1220" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="2">
+<position info="not_deleted" x="689" y="0"/>
+</item>
+<item historyLabel="cIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2237" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="1225" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="6">
+<position info="not_deleted" x="622" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="822" y="14"/>
+</item>
+<item historyLabel="main.cpp" index="7">
+<position info="not_deleted" x="220" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="773" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="8">
+<position info="not_deleted" x="689" y="0"/>
+</item>
+<item historyLabel="TestcIMUOdometry.cpp" index="1">
+<position info="not_deleted" x="1860" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="773" y="0"/>
+</item>
+<item historyLabel="main.cpp" index="9">
+<position info="not_deleted" x="194" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="773" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="616" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="843" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="616" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="656" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="917" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="951" y="0"/>
+</item>
+<item historyLabel="I2CSlave1.cpp" index="10">
+<position info="not_deleted" x="406" y="11"/>
+</item>
+<item historyLabel="stm32f4xx_hal_gpio.h" index="11">
+<position/>
+</item>
+<item historyLabel="I2CSlave1.cpp" index="10">
+<position info="not_deleted" x="406" y="11"/>
+</item>
+<item historyLabel="stm32f4xx_hal_gpio.h" index="11">
+<position info="not_deleted" x="8364" y="11"/>
+</item>
+<item historyLabel="I2CSlave1.cpp" index="10">
+<position info="not_deleted" x="685" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="1573" y="38"/>
+</item>
+<item historyLabel="main.cpp" index="12">
+<position info="not_deleted" x="689" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="1573" y="38"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="616" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="616" y="0"/>
+</item>
+<item active="true" historyLabel="stm32f4xx_it.c" index="3">
+<position info="not_deleted" x="616" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="hmc5883lEmulator/stm32f4xx_it.c">
-<persistable path="/hmc5883lEmulator/stm32f4xx_it.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2CSlave1.h" tooltip="hmc5883lEmulator/i2cSlave/I2CSlave1.h">
-<persistable path="/hmc5883lEmulator/i2cSlave/I2CSlave1.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cIMUOdometry.h" tooltip="hmc5883lEmulator/imuOdometry/cIMUOdometry.h">
-<persistable path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="TestcIMUOdometry.cpp" tooltip="hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp">
-<persistable path="/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="generalUtility.h" tooltip="hmc5883lEmulator/myLib/generalUtility.h">
-<persistable path="/hmc5883lEmulator/myLib/generalUtility.h"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="hmc5883lEmulator/sources/main.cpp">
 <persistable path="/hmc5883lEmulator/sources/main.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="deviceConfig.h" tooltip="hmc5883lEmulator/deviceConfig.h">
-<persistable path="/hmc5883lEmulator/deviceConfig.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_gpio.h" tooltip="hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f4xx_hal_gpio.h">
+<persistable path="/hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f4xx_hal_gpio.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2CSlave1.cpp" tooltip="hmc5883lEmulator/i2cSlave/I2CSlave1.cpp">
 <persistable path="/hmc5883lEmulator/i2cSlave/I2CSlave1.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2CSlaveX.cpp" tooltip="hmc5883lEmulator/i2cSlave/I2CSlaveX.cpp">
-<persistable path="/hmc5883lEmulator/i2cSlave/I2CSlaveX.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_i2c.h" tooltip="hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f4xx_hal_i2c.h">
+<persistable path="/hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f4xx_hal_i2c.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2CSlaveX.h" tooltip="hmc5883lEmulator/i2cSlave/I2CSlaveX.h">
-<persistable path="/hmc5883lEmulator/i2cSlave/I2CSlaveX.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="deviceConfig.h" tooltip="hmc5883lEmulator/deviceConfig.h">
+<persistable path="/hmc5883lEmulator/deviceConfig.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cIMUOdometry.h" tooltip="hmc5883lEmulator/imuOdometry/cIMUOdometry.h">
+<persistable path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cIMUOdometry.cpp" tooltip="hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp">
 <persistable path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="spooler/main.cpp">
-<persistable path="/spooler/main.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="TestcIMUOdometry.cpp" tooltip="hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp">
+<persistable path="/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="deviceConfig.h" tooltip="spooler/deviceConfig.h">
-<persistable path="/spooler/deviceConfig.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="hmc5883lEmulator/stm32f4xx_it.c">
+<persistable path="/hmc5883lEmulator/stm32f4xx_it.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_i2c.h" tooltip="hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f4xx_hal_i2c.h">
-<persistable path="/hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f4xx_hal_i2c.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2CSlave1.cpp" tooltip="hmc5883lEmulator/greatest/i2cSlave/I2CSlave1.cpp">
+<persistable path="/hmc5883lEmulator/greatest/i2cSlave/I2CSlave1.cpp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SpoolerSTM.cpp" tooltip="spooler/SpoolerSTM/SpoolerSTM.cpp">
-<persistable path="/spooler/SpoolerSTM/SpoolerSTM.cpp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f411xe.h" tooltip="hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f411xe.h">
+<persistable path="/hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f411xe.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cRingBuffer.c" tooltip="hmc5883lEmulator/myLib/cRingBuffer.c">
+<persistable path="/hmc5883lEmulator/myLib/cRingBuffer.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cAssert.h" tooltip="hmc5883lEmulator/myLib/cAssert.h">
+<persistable path="/hmc5883lEmulator/myLib/cAssert.h"/>
 </file>
 </mruList>
 </workbench>

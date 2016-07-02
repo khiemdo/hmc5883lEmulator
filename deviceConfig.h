@@ -1,6 +1,30 @@
+
+#define WHEEL_BASE 			(630)
+#define WHEEL_CIRCUMFERENCE	(1320)
+#define PPR_DRUM_ENCODER	(8192)
+
+#define HMC5883L_I2C_ADDRESS 		(0x1E) //7-bit address. 0x3C write, 0x3D read.
+#define HMC5883L_I2C_FREQUENCY		(100000)
+#define HMC5883L_I2C_WRITE   (0x3C)
+#define HMC5883L_I2C_READ    (0x3D)
+
+#define HMC5883L_CONFIG_A     0x00
+#define HMC5883L_CONFIG_B     0x01
+#define HMC5883L_MODE         0x02
+#define HMC5883L_X_MSB        0x03
+#define HMC5883L_X_LSB        0x04
+#define HMC5883L_Z_MSB        0x05
+#define HMC5883L_Z_LSB        0x06
+#define HMC5883L_Y_MSB        0x07
+#define HMC5883L_Y_LSB        0x08
+#define HMC5883L_STATUS       0x09
+#define HMC5883L_IDENT_A      0x0A
+#define HMC5883L_IDENT_B      0x0B
+#define HMC5883L_IDENT_C      0x0C
+#define HMC5883L_TOTAL_REGISTER     0x0D
+
 #define SERIAL_RBT_TX	(PA_9)//PA9, PA10 UART1
 #define SERIAL_RBT_RX	(PA_10)
-
 #define I2C1_SDA			(PB_9)
 #define I2C1_SCL			(PB_8)
 
