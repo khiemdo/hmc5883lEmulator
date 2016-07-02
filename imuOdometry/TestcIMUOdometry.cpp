@@ -7,6 +7,9 @@
 #include "main.h"
 
 extern I2C_HandleTypeDef I2CxHandle;
+extern volatile int32_t i2cFlag;
+extern uint8_t txI2cBuffer[10];
+extern uint8_t rxI2cBuffer[10];
 extern I2CSlave i2cCom;
 extern BufferedSerial rbtSerial;
 extern BufferedSerial debugSerial;
@@ -23,62 +26,28 @@ void Setup_TestcIMUOdometry(void* data) {
 	me->inCom = &rbtSerial;
 	me->inCom->baud(115200);
 
-	me->outCom = &i2cCom;
-	me->outCom->frequency(HMC5883L_I2C_FREQUENCY);
-	me->outCom->address(HMC5883L_I2C_ADDRESS);
+//	me->outCom = &i2cCom;
+//	me->outCom->frequency(HMC5883L_I2C_FREQUENCY);
+//	me->outCom->address(HMC5883L_I2C_ADDRESS);
 
 	me->wheelBase = WHEEL_BASE;
 
-//	me->outCom1 = &I2CxHandle;
-//	i2c1Config(me->outCom1);
+	me->outCom1 = &I2CxHandle;
+	i2c1Config(me->outCom1);
 
 }
-TEST TestI2CPort_cIMUOdometry2() {
-	cIMUOdometry* me = &imuOdometry;
-	uint8_t data[10] = { 0 };
-	HAL_I2C_Master_Transmit(me->outCom1, 0X1E, data, 1, 100);
-}
+
 TEST TestI2CPort_cIMUOdometry() {
 	cIMUOdometry* me = &imuOdometry;
 	int loopNumber = 100;
-
+	uint8_t data[10];
 	while (1) {
-		uint8_t msgBuff[30] = { 0 };
-		int index = 0;
-		int number = 0;
-		I2CSlave* i2cPtr = me->outCom;
-		int receiveFlag = i2cPtr->receive();
-//		uint8_t data[10]={0};
-//		i2cPtr->write((char*) data, 1);
-		switch (receiveFlag) {
-		case I2CSlave::ReadAddressed:
-			DEBUG(LOG_TEST, "rqI2CRead\r\n", 0);
-			index = 0;
-			number = (int) me->XOutput;
-			msgBuff[index++] = (uint8_t)(((number & 0xffff) >> 8) & 0xff);
-			msgBuff[index++] = (uint8_t)(((number & 0xffff)) & 0xff);
-			number = (int) me->ZOutput;
-			msgBuff[index++] = (uint8_t)(((number & 0xffff) >> 8) & 0xff);
-			msgBuff[index++] = (uint8_t)(((number & 0xffff)) & 0xff);
-			number = (int) me->YOutput;
-			msgBuff[index++] = (uint8_t)(((number & 0xffff) >> 8) & 0xff);
-			msgBuff[index++] = (uint8_t)(((number & 0xffff)) & 0xff);
-			i2cPtr->write((char*) msgBuff, index);
-			break;
-		case I2CSlave::WriteAddressed:
-			i2cPtr->read((char*) msgBuff, 2);
-
-//			wait_ms(10);
-//			(I2C1->SR1) = I2C1->SR1 &(~(I2C_SR1_STOPF));
-//			(I2C1->SR1) = 0;
-
-//			DEBUG(LOG_TEST, "got msg:%d,%d,%d,%d,%d\r\n",
-//					msgBuff[0], msgBuff[1], msgBuff[2], msgBuff[3], msgBuff[4], msgBuff[5]);
-			break;
-		case I2CSlave::NoData:
-			(I2C1->SR1) = I2C1->SR1 &(~(I2C_SR1_RXNE));
-//			i2cPtr->stop();
-			break;
+		if (__HAL_I2C_GET_FLAG(me->outCom1,I2C_FLAG_ADDR)) {
+			DEBUG(LOG_TEST, "got msg\r\n", 0);
+		}
+		HAL_StatusTypeDef ret = HAL_I2C_Slave_Receive_IT(me->outCom1, data, 2);
+		if (ret == HAL_OK) {
+			DEBUG(LOG_TEST, "got msg\r\n", 0);
 		}
 	}
 
@@ -154,16 +123,63 @@ TEST TestConvertCounterToXYZ_cIMUOdometry() {
 	PASS();
 }
 TEST TestHandleMasterMsg_cIMUOdometry() {
+	cIMUOdometry* me = &imuOdometry;
+	HAL_StatusTypeDef ret = HAL_ERROR;
+	int loopNumber = 100;
+//	txI2cBuffer[0] = 0x48;
+//	HAL_StatusTypeDef ret = HAL_I2C_Slave_Transmit_IT(me->outCom1, txI2cBuffer,
+//			1);
+	while (1) {
+		if (HAL_I2C_GetState(&I2CxHandle) == HAL_I2C_STATE_READY) {
+			ret = HAL_I2C_Slave_Receive_IT(me->outCom1,
+					rxI2cBuffer, 1);
+			if (ret = HAL_BUSY) {
+				//request read from master
+				if (__HAL_I2C_GET_FLAG(me->outCom1,I2C_FLAG_TRA) == 1) {
+					switch (rxI2cBuffer[0]) {
+					case HMC5883L_IDENT_A:
+						if (HAL_I2C_GetState(me->outCom1)
+								== HAL_I2C_STATE_BUSY_TX) { //got read request
+							txI2cBuffer[0] = 0x48;
+							ret = HAL_I2C_Slave_Transmit_IT(me->outCom1,
+									txI2cBuffer, 1);
+						} //todo: else write to config
+					case HMC5883L_IDENT_B:
+						if (HAL_I2C_GetState(me->outCom1)
+								== HAL_I2C_STATE_BUSY_TX) { //got read request
+							txI2cBuffer[0] = 0x34;
+							ret = HAL_I2C_Slave_Transmit_IT(me->outCom1,
+									txI2cBuffer, 1);
+						}
+						break;
+					case HMC5883L_IDENT_C:
+						if (HAL_I2C_GetState(me->outCom1)
+								== HAL_I2C_STATE_BUSY_TX) { //got read request
+							txI2cBuffer[0] = 0x33;
+							ret = HAL_I2C_Slave_Transmit_IT(me->outCom1,
+									txI2cBuffer, 1);
+						}
+						break;
+					}
+				}
+			} else if (ret == HAL_OK) { //request write
+				if (__HAL_I2C_GET_FLAG(me->outCom1,I2C_FLAG_ADDR) == 1) {
+					DEBUG(LOG_TEST, "rqWriteAddr:%d\r\n", rxI2cBuffer[0]);
+				}
+			}
 
+			break;
+		}
+	}
 }
 TEST TestSendXYZ_cIMUOdometry();
 
 SUITE(TestSuitecIMUOdometry)
 {
 	Setup_TestcIMUOdometry(NULL);
-	RUN_TEST(TestI2CPort_cIMUOdometry);
-//	RUN_TEST(TestI2CPort_cIMUOdometry2);
+//	RUN_TEST(TestI2CPort_cIMUOdometry);
 //	RUN_TEST(TestSerialPort_cIMUOdometry);
 //	RUN_TEST(TestHandleRBTSerial_cIMUOdometry);
 //	RUN_TEST(TestConvertCounterToXYZ_cIMUOdometry);
+	RUN_TEST(TestHandleMasterMsg_cIMUOdometry);
 }

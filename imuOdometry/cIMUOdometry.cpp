@@ -9,7 +9,7 @@ void cIMUOdometryInit(cIMUOdometry* me) {
 void cIMUOdometryConfig(cIMUOdometry* me, I2CSlave* outCom,
 		BufferedSerial* inCom) {
 	me->inCom = inCom;
-	me->outCom = outCom;
+//	me->outCom = outCom;
 }
 
 void SetMode_cIMUOdometry(cIMUOdometry* me);
@@ -43,8 +43,8 @@ void SendXYZ_cIMUOdometry(cIMUOdometry* me);
 void HandleRBTSerial_cIMUOdometry(cIMUOdometry* me) {
 	int8_t ch = 0;
 	if (me->inCom->readable()) {
-		ch = me->inCom->getc();
-	}
+ch	= me->inCom->getc();
+}
 	int32_t msgLength = FrameMsgGetter2(me->frameGetter, ch);
 	if (msgLength != 0) {
 		int ret = WaitAck_cRBTRS232ProtocolWrapper1(
@@ -67,7 +67,7 @@ void HandleMasterMsg_cIMUOdometry(cIMUOdometry* me) {
 	uint8_t msgBuff[30] = { 0 };
 	int index = 0;
 	int number = 0;
-	I2CSlave* i2cPtr = me->outCom;
+	I2CSlave* i2cPtr = 0; //todo
 	int receiveFlag = i2cPtr->receive();
 	switch (receiveFlag) {
 	case I2CSlave::ReadAddressed:
@@ -96,3 +96,15 @@ void Loop_cIMUOdometry(cIMUOdometry* me) {
 	UpdateOdometry_cIMUOdometry(me);
 	HandleMasterMsg_cIMUOdometry(me);
 }
+#ifdef __cplusplus
+extern "C" {
+#endif
+void I2C1_SlaveTxCpltCallback_cIMUOdometry(cIMUOdometry* me) {
+	me->transmitCmplt = 1;
+}
+void I2C1_SlaveRxCpltCallback_cIMUOdometry(cIMUOdometry* me) {
+	me->rxCmplt = 1;
+}
+#ifdef __cplusplus
+}
+#endif

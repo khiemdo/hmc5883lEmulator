@@ -35,9 +35,6 @@ void i2c1Config(I2C_HandleTypeDef* I2CxHandle) {
 	I2CxHandle->Init.OwnAddress2 = 0;
 	REQUIRE(HAL_I2C_Init(I2CxHandle) != HAL_OK);
 
-	__HAL_I2C_ENABLE_IT(I2CxHandle, I2C_IT_BUF);
-	__HAL_I2C_ENABLE_IT(I2CxHandle, I2C_IT_EVT);
-	__HAL_I2C_ENABLE_IT(I2CxHandle, I2C_IT_ERR);
 
 	/*##-4- Configure the NVIC for I2C #########################################*/
 	/* NVIC for I2C1 */

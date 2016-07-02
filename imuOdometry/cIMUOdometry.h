@@ -30,8 +30,10 @@
 #define HMC5883L_IDENT_C      0x0C
 
 typedef struct _cIMUOdometry_ {
-	I2CSlave * outCom;
+//	I2CSlave * outCom;
 	I2C_HandleTypeDef* outCom1;
+	volatile int32_t transmitCmplt;
+	volatile int32_t rxCmplt;
 	BufferedSerial* inCom;
 	cFrameMsgGetter *frameGetter;
 	int8_t registerA;
@@ -57,4 +59,7 @@ void cIMUOdometryConfig(cIMUOdometry* me, I2CSlave* outCom,
 		BufferedSerial* inCom);
 void Loop_cIMUOdometry(cIMUOdometry* me);
 void HandleRBTSerial_cIMUOdometry(cIMUOdometry* me);
+void HandleMasterMsg_cIMUOdometry(cIMUOdometry* me);
+extern "C" void I2C1_SlaveTxCpltCallback_cIMUOdometry(cIMUOdometry* me);
+extern "C" void I2C1_SlaveRxCpltCallback_cIMUOdometry(cIMUOdometry* me);
 #endif
