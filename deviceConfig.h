@@ -1,10 +1,9 @@
-
 #define WHEEL_BASE 			(630)
 #define WHEEL_CIRCUMFERENCE	(1320)
 #define PPR_DRUM_ENCODER	(8192)
 
-#define HMC5883L_I2C_ADDRESS 		(0x1E) //7-bit address. 0x3C write, 0x3D read.
-#define HMC5883L_I2C_FREQUENCY		(100000)
+#define HMC5883L_I2C_ADDRESS 		(0x3C) //7-bit address. 0x3C write, 0x3D read.
+#define HMC5883L_I2C_FREQUENCY		(200000)
 #define HMC5883L_I2C_WRITE   (0x3C)
 #define HMC5883L_I2C_READ    (0x3D)
 
@@ -27,8 +26,6 @@
 #define SERIAL_RBT_RX	(PA_10)
 #define I2C1_SDA			(PB_9)
 #define I2C1_SCL			(PB_8)
-
-#define I2C_ADDRESS        0x1E
 
 #define I2Cx                             I2C1
 #define I2Cx_CLK_ENABLE()                __HAL_RCC_I2C1_CLK_ENABLE()

@@ -26,12 +26,12 @@ void i2c1Config(I2C_HandleTypeDef* I2CxHandle) {
 
 	I2CxHandle->Instance = I2Cx;
 	I2CxHandle->Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
-	I2CxHandle->Init.ClockSpeed = 400000;
+	I2CxHandle->Init.ClockSpeed = HMC5883L_I2C_FREQUENCY;
 	I2CxHandle->Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
 	I2CxHandle->Init.DutyCycle = I2C_DUTYCYCLE_16_9;
 	I2CxHandle->Init.GeneralCallMode = I2C_GENERALCALL_DISABLE;
 	I2CxHandle->Init.NoStretchMode = I2C_NOSTRETCH_DISABLE;
-	I2CxHandle->Init.OwnAddress1 = I2C_ADDRESS;
+	I2CxHandle->Init.OwnAddress1 = HMC5883L_I2C_ADDRESS;
 	I2CxHandle->Init.OwnAddress2 = 0;
 	I2CxHandle->Mode = HAL_I2C_MODE_SLAVE;
 	REQUIRE(HAL_I2C_Init(I2CxHandle) == HAL_OK);

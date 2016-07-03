@@ -106,6 +106,14 @@ void DebugLog_cIMUOdometry(cIMUOdometry* me) {
 				(int32_t) me->distance, (int32_t)(me->XOutput),
 				(int32_t)(me->YOutput));
 		DEBUG(LOG_DEBUG, myBuff, 0);
+//		DEBUG(LOG_DEBUG, "index=%d\r\n", i2cDataIndex);
+		sprintf(myBuff, "m=%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,\r\n", (int32_t) memory[0],
+				(int32_t) memory[1], (int32_t) memory[2], (int32_t) memory[3],
+				(int32_t) memory[4], (int32_t) memory[5], (int32_t) memory[6],
+				(int32_t) memory[7], (int32_t) memory[8], (int32_t) memory[9],
+				(int32_t) memory[10], (int32_t) memory[11],
+				(int32_t) memory[12]);
+		DEBUG(LOG_DEBUG, myBuff, 0);
 		lastTime = currentTime;
 	}
 }
@@ -131,7 +139,7 @@ TEST TestSendXYZ_cIMUOdometry();
 
 SUITE(TestSuitecIMUOdometry)
 {
-	Setup_TestcIMUOdometry (NULL);
+	Setup_TestcIMUOdometry(NULL);
 //	RUN_TEST(TestI2CPort_cIMUOdometry);
 //	RUN_TEST(TestSerialPort_cIMUOdometry);
 //	RUN_TEST(TestHandleRBTSerial_cIMUOdometry);

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.9.3 -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wall -g -Map=hmc5883lEmulator.map -O0 --gc-sections -Wl,--wrap,main --specs=nano.specs -u _printf_float -u _scanf_float E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/board.o E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/cmsis_nvic.o E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/hal_tick.o E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/mbed_overrides.o E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/retarget.o E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/startup_stm32f411xe.o E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o -LE:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM -LE:/HopeProject/minecraft/hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM -TE:/HopeProject/minecraft/hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/STM32F411XE.ld -g -L..\..\.. -lmbed -L..\..\.. -lstdc++ -L..\..\.. -lsupc++ -L..\..\.. -lm -L..\..\.. -lgcc -L..\..\.. -lc -L..\..\.. -lnosys">
-      <target file="hmc5883lEmulator.elf" lastModified="155aca2f0d9">
+      <target file="hmc5883lEmulator.elf" lastModified="155aeae0ea7">
          <source file="..\obj\stm32f4xx_hal_spi.o" lastModified="155ab33742a"/>
          <source file="..\obj\stm32f4xx_hal_flash_ramfunc.o" lastModified="155ab3374a5"/>
          <source file="..\obj\BufferedSerial.o" lastModified="155ab33756b"/>
@@ -11,7 +11,7 @@
          <source file="..\obj\stm32f4xx_hal_ltdc.o" lastModified="155ab337801"/>
          <source file="..\obj\TestcFrameMsgGetter.o" lastModified="155ab33786e"/>
          <source file="..\obj\stm32f4xx_hal_iwdg.o" lastModified="155ab3378da"/>
-         <source file="..\obj\TestcEncoder.o" lastModified="155abb506e1"/>
+         <source file="..\obj\TestcEncoder.o" lastModified="155ad73668e"/>
          <source file="..\obj\stm32f4xx_hal_eth.o" lastModified="155ab3379e8"/>
          <source file="..\obj\cDebugUart.o" lastModified="155ab337a73"/>
          <source file="..\obj\stm32f4xx_ll_fsmc.o" lastModified="155ab337ad8"/>
@@ -29,16 +29,16 @@
          <source file="..\obj\stm32f4xx_hal_usart.o" lastModified="155ab338248"/>
          <source file="..\obj\stm32f4xx_hal_fmpi2c_ex.o" lastModified="155ab3382ae"/>
          <source file="..\obj\generalUtility.o" lastModified="155ab3382ef"/>
-         <source file="..\obj\cEncoder.o" lastModified="155abb50764"/>
+         <source file="..\obj\cEncoder.o" lastModified="155ad736712"/>
          <source file="..\obj\FSM.o" lastModified="155ab3383db"/>
-         <source file="..\obj\main.o" lastModified="155ac4e2db8"/>
+         <source file="..\obj\main.o" lastModified="155ad736804"/>
          <source file="..\obj\stm32f4xx_hal_i2s_ex.o" lastModified="155ab338564"/>
          <source file="..\obj\cInternalStateReport.o" lastModified="155ab3385d2"/>
-         <source file="..\obj\stm32f4xx_it.o" lastModified="155ac8f3571"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="155ae9c2ee9"/>
          <source file="..\obj\stm32f4xx_hal_flash.o" lastModified="155ab3386bc"/>
          <source file="..\obj\stm32f4xx_hal_pwr.o" lastModified="155ab33873b"/>
          <source file="..\obj\TestCRC.o" lastModified="155ab3387a4"/>
-         <source file="..\obj\TestcRBTRS232ProtocolWrapper.o" lastModified="155abb50999"/>
+         <source file="..\obj\TestcRBTRS232ProtocolWrapper.o" lastModified="155ad736940"/>
          <source file="..\obj\stm32f4xx_hal_can.o" lastModified="155ab3388e8"/>
          <source file="..\obj\stm32f4xx_hal_spdifrx.o" lastModified="155ab338951"/>
          <source file="..\obj\stm32f4xx_hal_irda.o" lastModified="155ab338a05"/>
@@ -59,7 +59,7 @@
          <source file="..\obj\stm32f4xx_hal_rcc.o" lastModified="155ab3391bd"/>
          <source file="..\obj\stm32f4xx_hal_flash_ex.o" lastModified="155ab339249"/>
          <source file="..\obj\stm32f4xx_hal_cortex.o" lastModified="155ab3392d3"/>
-         <source file="..\obj\I2CSlave1.o" lastModified="155ac9a5c20"/>
+         <source file="..\obj\I2CSlave1.o" lastModified="155ad7369b4"/>
          <source file="..\obj\stm32f4xx_hal_sai_ex.o" lastModified="155ab3393b5"/>
          <source file="..\obj\stm32f4xx_hal_adc.o" lastModified="155ab33945c"/>
          <source file="..\obj\stm32f4xx_hal_i2s.o" lastModified="155ab339501"/>
@@ -88,10 +88,10 @@
          <source file="..\obj\stm32f4xx_hal_msp_template.o" lastModified="155ab33a1de"/>
          <source file="..\obj\stm32f4xx_hal_dma.o" lastModified="155ab33a272"/>
          <source file="..\obj\stm32f4xx_hal_dcmi_ex.o" lastModified="155ab33a2d5"/>
-         <source file="..\obj\TestcIMUOdometry.o" lastModified="155ac57d994"/>
+         <source file="..\obj\TestcIMUOdometry.o" lastModified="155aeae0b86"/>
          <source file="..\obj\stm32f4xx_hal_wwdg.o" lastModified="155ab33a504"/>
          <source file="..\obj\testTelemetry.o" lastModified="155ab33a537"/>
-         <source file="..\obj\cIMUOdometry.o" lastModified="155ac5abe02"/>
+         <source file="..\obj\cIMUOdometry.o" lastModified="155ad736b89"/>
       </target>
    </processor>
 </history>

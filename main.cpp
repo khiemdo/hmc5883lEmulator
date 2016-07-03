@@ -11,6 +11,8 @@ I2C_HandleTypeDef I2CxHandle;
 int32_t i2cDataIndex;
 uint8_t memory[HMC5883L_TOTAL_REGISTER];
 int32_t i2cState;
+int32_t matchOwnReadAddr;
+int32_t matchOwnWriteAddr;
 BufferedSerial rbtSerial(SERIAL_RBT_TX, SERIAL_RBT_RX, 512);
 BufferedSerial debugSerial(USBTX, USBRX, 2048, 10, 0);
 cIMUOdometry imuOdometry;
