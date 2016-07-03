@@ -2,6 +2,7 @@
 #include "cFrameMsgGetter.h"
 #include "cRBTRS232ProtocolWrapper.h"
 #include "math.h"
+#include "generalUtility.h"
 
 void cIMUOdometryInit(cIMUOdometry* me) {
 	memset(me, 0, sizeof(cIMUOdometry));
@@ -62,14 +63,19 @@ void UpdateOdometry_cIMUOdometry(cIMUOdometry* me) {
 	ConvertCounterToXYZ_cIMUOdometry(me, me->mmLeft, me->mmRight, WHEEL_BASE);
 
 	uint8_t* buffPtr = me->memory + HMC5883L_X_MSB;
-	int16_t number16 = (int16_t)(me->XOutput);
-	memcpy(buffPtr, &number16, sizeof(int16_t));
+
+	int16_t number16 = (int16_t)(me->XOutput / 32);
+	int16_t swapNumber16 = SWAP_UINT16T(number16);
+	memcpy(buffPtr, &swapNumber16, sizeof(int16_t));
 	buffPtr += 2;
+
 	number16 = 0;
 	memcpy(buffPtr, &number16, sizeof(int16_t));
 	buffPtr += 2;
-	number16 = (int16_t)(me->YOutput);
-	memcpy(buffPtr, &number16, sizeof(int16_t));
+
+	number16 = (int16_t)(me->YOutput / 32);
+	swapNumber16 = SWAP_UINT16T(number16);
+	memcpy(buffPtr, &swapNumber16, sizeof(int16_t));
 }
 
 void Loop_cIMUOdometry(cIMUOdometry* me) {

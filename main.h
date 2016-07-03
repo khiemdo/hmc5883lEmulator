@@ -5,7 +5,7 @@
 #define USE_FULL_ASSERT
 #define USE_MY_ASSERT
 #define DEBUGON
-#define DEBUGLV  LOG_TEST
+#define DEBUGLV  LOG_DEBUG
 #define ASSERTLV 2
 
 #define CRC_CCITT

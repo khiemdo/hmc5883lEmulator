@@ -2,7 +2,6 @@
 #include "deviceConfig.h"
 #include "deviceConfig.h"
 #include "cAssert.h"
-
 typedef enum {
 	READY_I2C,
 	MATCH_OWN_ADDRESS_I2C,

@@ -103,8 +103,8 @@ void DebugLog_cIMUOdometry(cIMUOdometry* me) {
 		DEBUG(LOG_DEBUG, "c=%d:%d\r\n", me->counter[0], me->counter[1]);
 		char myBuff[100];
 		sprintf(myBuff, "o=%d,%d,%d,%d\r\n", (int32_t) me->thetaDegree,
-				(int32_t) me->distance, (int32_t)(me->XOutput),
-				(int32_t)(me->YOutput));
+				(int32_t) me->distance, (int32_t)(me->XOutput/32),
+				(int32_t)(me->YOutput/32));
 		DEBUG(LOG_DEBUG, myBuff, 0);
 //		DEBUG(LOG_DEBUG, "index=%d\r\n", i2cDataIndex);
 		sprintf(myBuff, "m=%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,\r\n", (int32_t) memory[0],
@@ -125,7 +125,7 @@ TEST TestConvertCounterToXYZ_cIMUOdometry() {
 	while (1) {
 		uint32_t currentTime = HAL_GetTick();
 		int deltaTime = currentTime - lastTime;
-		if (deltaTime > 1000) {
+		if (deltaTime > 50) {
 			me->inCom->printf("?C\r");
 			lastTime = currentTime;
 		}
