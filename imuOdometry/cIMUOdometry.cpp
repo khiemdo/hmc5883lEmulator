@@ -35,8 +35,8 @@ void ConvertCounterToXYZ_cIMUOdometry(cIMUOdometry* me, float_t mmLeft,
 	me->theta = (mmLeft - mmRight) / mmWheelBase;
 	me->thetaDegree = me->theta / M_PI * 180;
 	me->distance = (mmLeft + mmRight) / 2;
-	me->XOutput = -1000 * cosf(me->theta);
-	me->YOutput = 1000 * sinf(me->theta);
+	me->XOutput = -800 * cosf(me->theta);
+	me->YOutput = 800 * sinf(me->theta);
 }
 
 void HandleRBTSerial_cIMUOdometry(cIMUOdometry* me) {
@@ -64,7 +64,7 @@ void UpdateOdometry_cIMUOdometry(cIMUOdometry* me) {
 
 	uint8_t* buffPtr = me->memory + HMC5883L_X_MSB;
 
-	int16_t number16 = (int16_t)(me->XOutput / 32);
+	int16_t number16 = (int16_t)(me->XOutput);
 	int16_t swapNumber16 = SWAP_UINT16T(number16);
 	memcpy(buffPtr, &swapNumber16, sizeof(int16_t));
 	buffPtr += 2;
@@ -73,7 +73,7 @@ void UpdateOdometry_cIMUOdometry(cIMUOdometry* me) {
 	memcpy(buffPtr, &number16, sizeof(int16_t));
 	buffPtr += 2;
 
-	number16 = (int16_t)(me->YOutput / 32);
+	number16 = (int16_t)(me->YOutput);
 	swapNumber16 = SWAP_UINT16T(number16);
 	memcpy(buffPtr, &swapNumber16, sizeof(int16_t));
 }

@@ -1,6 +1,7 @@
-#define WHEEL_BASE 			(630)
+
+#define WHEEL_BASE 			(1368)
 #define WHEEL_CIRCUMFERENCE	(1320)
-#define PPR_DRUM_ENCODER	(8192)
+#define PPR_DRUM_ENCODER	(5000)
 
 #define HMC5883L_I2C_ADDRESS 		(0x3C) //7-bit address. 0x3C write, 0x3D read.
 #define HMC5883L_I2C_FREQUENCY		(200000)
