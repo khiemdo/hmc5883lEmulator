@@ -140,8 +140,6 @@ c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none
                               ..\obj\TestcEncoder.o (printf)
 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putc.o)
                               c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fputc.o) (_putc_r)
-c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putchar.o)
-                              ..\obj\TestcIMUOdometry.o (putchar)
 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-reent.o)
                               E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/retarget.o (errno)
 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-refill.o)
@@ -3575,7 +3573,7 @@ Discarded input sections
  .text._ZL24TestI2CPort_cIMUOdometryv
                 0x00000000       0x38 ..\obj\TestcIMUOdometry.o
  .text._ZL27TestSerialPort_cIMUOdometryv
-                0x00000000       0xc8 ..\obj\TestcIMUOdometry.o
+                0x00000000       0xa4 ..\obj\TestcIMUOdometry.o
  .text._ZL32TestHandleRBTSerial_cIMUOdometryv
                 0x00000000       0x7c ..\obj\TestcIMUOdometry.o
  .text          0x00000000        0x0 ..\obj\stm32f4xx_hal_wwdg.o
@@ -4122,15 +4120,6 @@ Discarded input sections
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putc.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putc.o)
  .text.putc     0x00000000       0x14 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putc.o)
- .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putchar.o)
- .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putchar.o)
- .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putchar.o)
- .text._putchar_r
-                0x00000000       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putchar.o)
- .text.putchar  0x00000000       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putchar.o)
- .debug_frame   0x00000000       0x58 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putchar.o)
- .ARM.attributes
-                0x00000000       0x32 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putchar.o)
  .text          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-reent.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-reent.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-reent.o)
@@ -4507,7 +4496,7 @@ LOAD E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHA
 LOAD E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/startup_stm32f411xe.o
 LOAD E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o
 
-.text           0x08000000     0x8498
+.text           0x08000000     0x8434
  *(.isr_vector)
  .isr_vector    0x08000000      0x198 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/startup_stm32f411xe.o
                 0x08000000                g_pfnVectors
@@ -4895,403 +4884,402 @@ LOAD E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHA
                 0x080036e4       0xb0 ..\obj\TestcIMUOdometry.o
                 0x080036e4                Setup_TestcIMUOdometry(void*)
  .text._Z21DebugLog_cIMUOdometryP14_cIMUOdometry_
-                0x08003794      0x168 ..\obj\TestcIMUOdometry.o
+                0x08003794      0x114 ..\obj\TestcIMUOdometry.o
                 0x08003794                DebugLog_cIMUOdometry(_cIMUOdometry_*)
  .text._ZL36TestConvertCounterToXYZ_cIMUOdometryv
-                0x080038fc       0x58 ..\obj\TestcIMUOdometry.o
+                0x080038a8       0x58 ..\obj\TestcIMUOdometry.o
  .text._Z21TestSuitecIMUOdometryv
-                0x08003954       0x80 ..\obj\TestcIMUOdometry.o
-                0x08003954                TestSuitecIMUOdometry()
+                0x08003900       0x80 ..\obj\TestcIMUOdometry.o
+                0x08003900                TestSuitecIMUOdometry()
  .text._Z25ConvertCounterToArcLengthfff
-                0x080039d4       0x30 ..\obj\cIMUOdometry.o
-                0x080039d4                ConvertCounterToArcLength(float, float, float)
- *fill*         0x08003a04        0x4 
+                0x08003980       0x30 ..\obj\cIMUOdometry.o
+                0x08003980                ConvertCounterToArcLength(float, float, float)
  .text._Z32ConvertCounterToXYZ_cIMUOdometryP14_cIMUOdometry_fff
-                0x08003a08       0xd4 ..\obj\cIMUOdometry.o
-                0x08003a08                ConvertCounterToXYZ_cIMUOdometry(_cIMUOdometry_*, float, float, float)
- .text._Z28HandleRBTSerial_cIMUOdometryP14_cIMUOdometry_
-                0x08003adc       0x78 ..\obj\cIMUOdometry.o
-                0x08003adc                HandleRBTSerial_cIMUOdometry(_cIMUOdometry_*)
+                0x080039b0       0xd4 ..\obj\cIMUOdometry.o
+                0x080039b0                ConvertCounterToXYZ_cIMUOdometry(_cIMUOdometry_*, float, float, float)
  .text._Z27UpdateOdometry_cIMUOdometryP14_cIMUOdometry_
-                0x08003b54      0x100 ..\obj\cIMUOdometry.o
-                0x08003b54                UpdateOdometry_cIMUOdometry(_cIMUOdometry_*)
+                0x08003a84      0x104 ..\obj\cIMUOdometry.o
+                0x08003a84                UpdateOdometry_cIMUOdometry(_cIMUOdometry_*)
+ .text._Z28HandleRBTSerial_cIMUOdometryP14_cIMUOdometry_
+                0x08003b88       0x84 ..\obj\cIMUOdometry.o
+                0x08003b88                HandleRBTSerial_cIMUOdometry(_cIMUOdometry_*)
  .text._Z17Loop_cIMUOdometryP14_cIMUOdometry_
-                0x08003c54       0x1c ..\obj\cIMUOdometry.o
-                0x08003c54                Loop_cIMUOdometry(_cIMUOdometry_*)
+                0x08003c0c       0x14 ..\obj\cIMUOdometry.o
+                0x08003c0c                Loop_cIMUOdometry(_cIMUOdometry_*)
  .text.uart_irq
-                0x08003c70       0x64 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003c20       0x64 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
  .text.uart1_irq
-                0x08003cd4        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003c84        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
  .text.uart2_irq
-                0x08003cdc        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003c8c        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
  .text.uart6_irq
-                0x08003ce4        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003c94        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
  .text.serial_init
-                0x08003cec      0x1b0 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x08003cec                serial_init
+                0x08003c9c      0x1b0 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003c9c                serial_init
  .text.serial_baud
-                0x08003e9c       0x2c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x08003e9c                serial_baud
+                0x08003e4c       0x2c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003e4c                serial_baud
  .text.serial_irq_handler
-                0x08003ec8       0x1c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x08003ec8                serial_irq_handler
+                0x08003e78       0x1c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003e78                serial_irq_handler
  .text.serial_irq_set
-                0x08003ee4       0xb4 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x08003ee4                serial_irq_set
+                0x08003e94       0xb4 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003e94                serial_irq_set
  .text.serial_getc
-                0x08003f98       0x1c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x08003f98                serial_getc
+                0x08003f48       0x1c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003f48                serial_getc
  .text.serial_putc
-                0x08003fb4       0x1c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x08003fb4                serial_putc
+                0x08003f64       0x1c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003f64                serial_putc
  .text.serial_readable
-                0x08003fd0       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x08003fd0                serial_readable
+                0x08003f80       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003f80                serial_readable
  .text.serial_writable
-                0x08003fe4       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x08003fe4                serial_writable
+                0x08003f94       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08003f94                serial_writable
  .text.us_ticker_init
-                0x08003ff8       0x24 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
-                0x08003ff8                us_ticker_init
+                0x08003fa8       0x24 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x08003fa8                us_ticker_init
  .text.us_ticker_read
-                0x0800401c       0x28 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
-                0x0800401c                us_ticker_read
+                0x08003fcc       0x28 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x08003fcc                us_ticker_read
  .text.us_ticker_set_interrupt
-                0x08004044       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
-                0x08004044                us_ticker_set_interrupt
+                0x08003ff4       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x08003ff4                us_ticker_set_interrupt
  .text.us_ticker_disable_interrupt
-                0x08004058       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
-                0x08004058                us_ticker_disable_interrupt
+                0x08004008       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x08004008                us_ticker_disable_interrupt
  .text.us_ticker_clear_interrupt
-                0x0800406c       0x10 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
-                0x0800406c                us_ticker_clear_interrupt
+                0x0800401c       0x10 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x0800401c                us_ticker_clear_interrupt
  .text._ZN4mbed9RawSerialC2E7PinNameS1_
-                0x0800407c       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(RawSerial.o)
-                0x0800407c                mbed::RawSerial::RawSerial(PinName, PinName)
-                0x0800407c                mbed::RawSerial::RawSerial(PinName, PinName)
+                0x0800402c       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(RawSerial.o)
+                0x0800402c                mbed::RawSerial::RawSerial(PinName, PinName)
+                0x0800402c                mbed::RawSerial::RawSerial(PinName, PinName)
  .text._ZN4mbed10SerialBase12_irq_handlerEm9SerialIrq
-                0x08004090       0x20 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x08004090                mbed::SerialBase::_irq_handler(unsigned long, SerialIrq)
+                0x08004040       0x20 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x08004040                mbed::SerialBase::_irq_handler(unsigned long, SerialIrq)
  .text._ZN4mbed10SerialBaseC2E7PinNameS1_
-                0x080040b0       0x48 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x080040b0                mbed::SerialBase::SerialBase(PinName, PinName)
-                0x080040b0                mbed::SerialBase::SerialBase(PinName, PinName)
+                0x08004060       0x48 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x08004060                mbed::SerialBase::SerialBase(PinName, PinName)
+                0x08004060                mbed::SerialBase::SerialBase(PinName, PinName)
  .text._ZN4mbed10SerialBase4baudEi
-                0x080040f8       0x10 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x080040f8                mbed::SerialBase::baud(int)
+                0x080040a8       0x10 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x080040a8                mbed::SerialBase::baud(int)
  .text._ZN4mbed10SerialBase6attachEPFvvENS0_7IrqTypeE
-                0x08004108       0x30 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
-                0x08004108                mbed::SerialBase::attach(void (*)(), mbed::SerialBase::IrqType)
+                0x080040b8       0x30 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(SerialBase.o)
+                0x080040b8                mbed::SerialBase::attach(void (*)(), mbed::SerialBase::IrqType)
  .text.mbed_assert_internal
-                0x08004138       0x18 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(assert.o)
-                0x08004138                mbed_assert_internal
- .text.error    0x08004150       0x24 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(error.o)
-                0x08004150                error
+                0x080040e8       0x18 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(assert.o)
+                0x080040e8                mbed_assert_internal
+ .text.error    0x08004100       0x24 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(error.o)
+                0x08004100                error
  .text.gpio_init_out
-                0x08004174       0x48 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio.o)
-                0x08004174                gpio_init_out
+                0x08004124       0x48 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio.o)
+                0x08004124                gpio_init_out
  .text.pinmap_pinout
-                0x080041bc       0x44 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
-                0x080041bc                pinmap_pinout
+                0x0800416c       0x44 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
+                0x0800416c                pinmap_pinout
  .text.pinmap_merge
-                0x08004200       0x24 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
-                0x08004200                pinmap_merge
+                0x080041b0       0x24 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
+                0x080041b0                pinmap_merge
  .text.pinmap_peripheral
-                0x08004224       0x38 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
-                0x08004224                pinmap_peripheral
- .text.clock    0x0800425c       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(rtc_time.o)
-                0x0800425c                clock
+                0x080041d4       0x38 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
+                0x080041d4                pinmap_peripheral
+ .text.clock    0x0800420c       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(rtc_time.o)
+                0x0800420c                clock
  .text.us_ticker_irq_handler
-                0x08004270        0xc E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
-                0x08004270                us_ticker_irq_handler
- .text.wait_us  0x0800427c       0x18 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(wait_api.o)
-                0x0800427c                wait_us
- .text.wait_ms  0x08004294        0xc E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(wait_api.o)
-                0x08004294                wait_ms
+                0x08004220        0xc E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
+                0x08004220                us_ticker_irq_handler
+ .text.wait_us  0x0800422c       0x18 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(wait_api.o)
+                0x0800422c                wait_us
+ .text.wait_ms  0x08004244        0xc E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(wait_api.o)
+                0x08004244                wait_ms
  .text.gpio_set
-                0x080042a0       0x30 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
-                0x080042a0                gpio_set
+                0x08004250       0x30 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
+                0x08004250                gpio_set
  .text.gpio_init
-                0x080042d0       0x2c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
-                0x080042d0                gpio_init
+                0x08004280       0x2c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
+                0x08004280                gpio_init
  .text.gpio_mode
-                0x080042fc        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
-                0x080042fc                gpio_mode
+                0x080042ac        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
+                0x080042ac                gpio_mode
  .text.gpio_dir
-                0x08004304       0x40 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
-                0x08004304                gpio_dir
+                0x080042b4       0x40 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
+                0x080042b4                gpio_dir
  .text.Set_GPIO_Clock
-                0x08004344       0xec E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
-                0x08004344                Set_GPIO_Clock
+                0x080042f4       0xec E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
+                0x080042f4                Set_GPIO_Clock
  .text.pin_function
-                0x08004430       0x5c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
-                0x08004430                pin_function
+                0x080043e0       0x5c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
+                0x080043e0                pin_function
  .text.pin_mode
-                0x0800448c       0x48 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
-                0x0800448c                pin_mode
+                0x0800443c       0x48 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
+                0x0800443c                pin_mode
  .text.ticker_irq_handler
-                0x080044d4       0x4c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
-                0x080044d4                ticker_irq_handler
- .text._ZdaPv   0x08004520        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_opv.o)
-                0x08004520                operator delete[](void*)
+                0x08004484       0x4c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
+                0x08004484                ticker_irq_handler
+ .text._ZdaPv   0x080044d0        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_opv.o)
+                0x080044d0                operator delete[](void*)
  .text.__aeabi_atexit
-                0x08004524        0xa c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(atexit_arm.o)
-                0x08004524                __aeabi_atexit
- .text._ZdlPv   0x0800452e        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_op.o)
-                0x0800452e                operator delete(void*)
- .text._Znwj    0x08004532       0x22 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_op.o)
-                0x08004532                operator new(unsigned int)
- .text._Znaj    0x08004554        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_opv.o)
-                0x08004554                operator new[](unsigned int)
+                0x080044d4        0xa c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(atexit_arm.o)
+                0x080044d4                __aeabi_atexit
+ .text._ZdlPv   0x080044de        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_op.o)
+                0x080044de                operator delete(void*)
+ .text._Znwj    0x080044e2       0x22 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_op.o)
+                0x080044e2                operator new(unsigned int)
+ .text._Znaj    0x08004504        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_opv.o)
+                0x08004504                operator new[](unsigned int)
  .text._ZSt15get_new_handlerv
-                0x08004558       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_handler.o)
-                0x08004558                std::get_new_handler()
- .text.cosf     0x08004568       0x8c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_cos.o)
-                0x08004568                cosf
- .text.sinf     0x080045f4       0x9c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_sin.o)
-                0x080045f4                sinf
+                0x08004508       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_handler.o)
+                0x08004508                std::get_new_handler()
+ .text.cosf     0x08004518       0x8c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_cos.o)
+                0x08004518                cosf
+ .text.sinf     0x080045a4       0x9c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_sin.o)
+                0x080045a4                sinf
  .text.__ieee754_rem_pio2f
-                0x08004690      0x298 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-ef_rem_pio2.o)
-                0x08004690                __ieee754_rem_pio2f
+                0x08004640      0x298 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-ef_rem_pio2.o)
+                0x08004640                __ieee754_rem_pio2f
  .text.__kernel_cosf
-                0x08004928      0x114 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_cos.o)
-                0x08004928                __kernel_cosf
+                0x080048d8      0x114 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_cos.o)
+                0x080048d8                __kernel_cosf
  .text.__kernel_rem_pio2f
-                0x08004a3c      0x628 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_rem_pio2.o)
-                0x08004a3c                __kernel_rem_pio2f
+                0x080049ec      0x628 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_rem_pio2.o)
+                0x080049ec                __kernel_rem_pio2f
  .text.__kernel_sinf
-                0x08005064       0x9c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_sin.o)
-                0x08005064                __kernel_sinf
- .text.fabsf    0x08005100        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_fabs.o)
-                0x08005100                fabsf
- .text.floorf   0x08005108       0xb4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_floor.o)
-                0x08005108                floorf
- .text.scalbnf  0x080051bc      0x100 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_scalbn.o)
-                0x080051bc                scalbnf
+                0x08005014       0x9c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_sin.o)
+                0x08005014                __kernel_sinf
+ .text.fabsf    0x080050b0        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_fabs.o)
+                0x080050b0                fabsf
+ .text.floorf   0x080050b8       0xb4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_floor.o)
+                0x080050b8                floorf
+ .text.scalbnf  0x0800516c      0x100 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_scalbn.o)
+                0x0800516c                scalbnf
  .text.copysignf
-                0x080052bc        0xc c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_copysign.o)
-                0x080052bc                copysignf
- .text          0x080052c8      0x370 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp\libgcc.a(_arm_addsubdf3.o)
-                0x080052c8                __aeabi_drsub
-                0x080052d0                __aeabi_dsub
-                0x080052d0                __subdf3
-                0x080052d4                __aeabi_dadd
-                0x080052d4                __adddf3
-                0x0800554c                __floatunsidf
-                0x0800554c                __aeabi_ui2d
-                0x0800556c                __floatsidf
-                0x0800556c                __aeabi_i2d
-                0x08005590                __aeabi_f2d
-                0x08005590                __extendsfdf2
-                0x080055cc                __floatundidf
-                0x080055cc                __aeabi_ul2d
-                0x080055dc                __floatdidf
-                0x080055dc                __aeabi_l2d
- .text          0x08005638      0x424 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp\libgcc.a(_arm_muldivdf3.o)
-                0x08005638                __aeabi_dmul
-                0x08005638                __muldf3
-                0x0800588c                __divdf3
-                0x0800588c                __aeabi_ddiv
- .text          0x08005a5c       0xa0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp\libgcc.a(_arm_truncdfsf2.o)
-                0x08005a5c                __truncdfsf2
-                0x08005a5c                __aeabi_d2f
- .text.abort    0x08005afc        0xe c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-abort.o)
-                0x08005afc                abort
- .text.atoi     0x08005b0a        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-atoi.o)
-                0x08005b0a                atoi
- *fill*         0x08005b12        0x2 
+                0x0800526c        0xc c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_copysign.o)
+                0x0800526c                copysignf
+ .text          0x08005278      0x370 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp\libgcc.a(_arm_addsubdf3.o)
+                0x08005278                __aeabi_drsub
+                0x08005280                __aeabi_dsub
+                0x08005280                __subdf3
+                0x08005284                __aeabi_dadd
+                0x08005284                __adddf3
+                0x080054fc                __floatunsidf
+                0x080054fc                __aeabi_ui2d
+                0x0800551c                __floatsidf
+                0x0800551c                __aeabi_i2d
+                0x08005540                __aeabi_f2d
+                0x08005540                __extendsfdf2
+                0x0800557c                __floatundidf
+                0x0800557c                __aeabi_ul2d
+                0x0800558c                __floatdidf
+                0x0800558c                __aeabi_l2d
+ .text          0x080055e8      0x424 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp\libgcc.a(_arm_muldivdf3.o)
+                0x080055e8                __aeabi_dmul
+                0x080055e8                __muldf3
+                0x0800583c                __divdf3
+                0x0800583c                __aeabi_ddiv
+ .text          0x08005a0c       0xa0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp\libgcc.a(_arm_truncdfsf2.o)
+                0x08005a0c                __truncdfsf2
+                0x08005a0c                __aeabi_d2f
+ .text.abort    0x08005aac        0xe c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-abort.o)
+                0x08005aac                abort
+ .text.atoi     0x08005aba        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-atoi.o)
+                0x08005aba                atoi
+ *fill*         0x08005ac2        0x2 
  .text.__cxa_atexit
-                0x08005b14       0x1c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-cxa_atexit.o)
-                0x08005b14                __cxa_atexit
- .text.__errno  0x08005b30        0xc c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-errno.o)
-                0x08005b30                __errno
- .text.exit     0x08005b3c       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-exit.o)
-                0x08005b3c                exit
+                0x08005ac4       0x1c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-cxa_atexit.o)
+                0x08005ac4                __cxa_atexit
+ .text.__errno  0x08005ae0        0xc c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-errno.o)
+                0x08005ae0                __errno
+ .text.exit     0x08005aec       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-exit.o)
+                0x08005aec                exit
  .text.__sflush_r
-                0x08005b64      0x108 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fflush.o)
-                0x08005b64                __sflush_r
+                0x08005b14      0x108 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fflush.o)
+                0x08005b14                __sflush_r
  .text._fflush_r
-                0x08005c6c       0x54 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fflush.o)
-                0x08005c6c                _fflush_r
- .text.fflush   0x08005cc0       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fflush.o)
-                0x08005cc0                fflush
+                0x08005c1c       0x54 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fflush.o)
+                0x08005c1c                _fflush_r
+ .text.fflush   0x08005c70       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fflush.o)
+                0x08005c70                fflush
  .text._cleanup_r
-                0x08005ce4        0xc c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
-                0x08005ce4                _cleanup_r
+                0x08005c94        0xc c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
+                0x08005c94                _cleanup_r
  .text.std.isra.0
-                0x08005cf0       0x48 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
+                0x08005ca0       0x48 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x08005d38       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
-                0x08005d38                __sfmoreglue
- .text.__sinit  0x08005d64       0x60 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
-                0x08005d64                __sinit
- .text.__sfp    0x08005dc4       0x74 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
-                0x08005dc4                __sfp
- .text.fprintf  0x08005e38       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fprintf.o)
-                0x08005e38                fiprintf
-                0x08005e38                fprintf
+                0x08005ce8       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
+                0x08005ce8                __sfmoreglue
+ .text.__sinit  0x08005d14       0x60 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
+                0x08005d14                __sinit
+ .text.__sfp    0x08005d74       0x74 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
+                0x08005d74                __sfp
+ .text.fprintf  0x08005de8       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fprintf.o)
+                0x08005de8                fiprintf
+                0x08005de8                fprintf
  .text._fputc_r
-                0x08005e5c       0x48 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fputc.o)
-                0x08005e5c                _fputc_r
- .text.fputc    0x08005ea4       0x14 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fputc.o)
-                0x08005ea4                fputc
+                0x08005e0c       0x48 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fputc.o)
+                0x08005e0c                _fputc_r
+ .text.fputc    0x08005e54       0x14 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fputc.o)
+                0x08005e54                fputc
  .text._fwalk_reent
-                0x08005eb8       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fwalk.o)
-                0x08005eb8                _fwalk_reent
+                0x08005e68       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fwalk.o)
+                0x08005e68                _fwalk_reent
  .text._fwrite_r
-                0x08005ef4       0xb4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fwrite.o)
-                0x08005ef4                _fwrite_r
- .text.fwrite   0x08005fa8       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fwrite.o)
-                0x08005fa8                fwrite
+                0x08005ea4       0xb4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fwrite.o)
+                0x08005ea4                _fwrite_r
+ .text.fwrite   0x08005f58       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fwrite.o)
+                0x08005f58                fwrite
  .text.__libc_init_array
-                0x08005fc8       0x4c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-init.o)
-                0x08005fc8                __libc_init_array
- .text.malloc   0x08006014       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-malloc.o)
-                0x08006014                malloc
- .text.free     0x08006024       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-malloc.o)
-                0x08006024                free
- .text.memchr   0x08006034       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memchr.o)
-                0x08006034                memchr
- .text.memcpy   0x08006052       0x16 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memcpy.o)
-                0x08006052                memcpy
- .text.memset   0x08006068       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memset.o)
-                0x08006068                memset
- .text._free_r  0x08006078       0x88 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-freer.o)
-                0x08006078                _free_r
+                0x08005f78       0x4c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-init.o)
+                0x08005f78                __libc_init_array
+ .text.malloc   0x08005fc4       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-malloc.o)
+                0x08005fc4                malloc
+ .text.free     0x08005fd4       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-malloc.o)
+                0x08005fd4                free
+ .text.memchr   0x08005fe4       0x1e c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memchr.o)
+                0x08005fe4                memchr
+ .text.memcpy   0x08006002       0x16 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memcpy.o)
+                0x08006002                memcpy
+ .text.memset   0x08006018       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memset.o)
+                0x08006018                memset
+ .text._free_r  0x08006028       0x88 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-freer.o)
+                0x08006028                _free_r
  .text._malloc_r
-                0x08006100       0xac c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x08006100                _malloc_r
+                0x080060b0       0xac c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x080060b0                _malloc_r
  .text.__sfputc_r
-                0x080061ac       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0800615c       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x080061d8       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x080061d8                __sfputs_r
+                0x08006188       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x08006188                __sfputs_r
  .text._vfprintf_r
-                0x080061fc      0x210 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x080061fc                _vfprintf_r
-                0x080061fc                _vfiprintf_r
+                0x080061ac      0x210 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x080061ac                _vfprintf_r
+                0x080061ac                _vfiprintf_r
  .text.vfprintf
-                0x0800640c       0x1c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0800640c                vfprintf
-                0x0800640c                vfiprintf
+                0x080063bc       0x1c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x080063bc                vfprintf
+                0x080063bc                vfiprintf
  .text._printf_common
-                0x08006428       0xea c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08006428                _printf_common
- *fill*         0x08006512        0x2 
+                0x080063d8       0xea c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x080063d8                _printf_common
+ *fill*         0x080064c2        0x2 
  .text._printf_i
-                0x08006514      0x240 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08006514                _printf_i
- .text.printf   0x08006754       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-printf.o)
-                0x08006754                iprintf
-                0x08006754                printf
- .text._putc_r  0x08006784       0x78 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putc.o)
-                0x08006784                _putc_r
- .text._sbrk_r  0x080067fc       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-sbrkr.o)
-                0x080067fc                _sbrk_r
- .text          0x0800681c       0x1c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-setjmp.o)
-                0x0800681c                setjmp
-                0x08006828                longjmp
+                0x080064c4      0x240 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x080064c4                _printf_i
+ .text.printf   0x08006704       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-printf.o)
+                0x08006704                iprintf
+                0x08006704                printf
+ .text._putc_r  0x08006734       0x78 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putc.o)
+                0x08006734                _putc_r
+ .text._sbrk_r  0x080067ac       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-sbrkr.o)
+                0x080067ac                _sbrk_r
+ .text          0x080067cc       0x1c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-setjmp.o)
+                0x080067cc                setjmp
+                0x080067d8                longjmp
  .text._raise_r
-                0x08006838       0x50 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signal.o)
-                0x08006838                _raise_r
- .text.raise    0x08006888       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signal.o)
-                0x08006888                raise
- .text._kill_r  0x08006898       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signalr.o)
-                0x08006898                _kill_r
+                0x080067e8       0x50 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signal.o)
+                0x080067e8                _raise_r
+ .text.raise    0x08006838       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signal.o)
+                0x08006838                raise
+ .text._kill_r  0x08006848       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signalr.o)
+                0x08006848                _kill_r
  .text._getpid_r
-                0x080068bc        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signalr.o)
-                0x080068bc                _getpid_r
- .text.sprintf  0x080068c0       0x48 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-sprintf.o)
-                0x080068c0                siprintf
-                0x080068c0                sprintf
- .text.__sread  0x08006908       0x22 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-stdio.o)
-                0x08006908                __sread
+                0x0800686c        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signalr.o)
+                0x0800686c                _getpid_r
+ .text.sprintf  0x08006870       0x48 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-sprintf.o)
+                0x08006870                siprintf
+                0x08006870                sprintf
+ .text.__sread  0x080068b8       0x22 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-stdio.o)
+                0x080068b8                __sread
  .text.__swrite
-                0x0800692a       0x38 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-stdio.o)
-                0x0800692a                __swrite
- .text.__sseek  0x08006962       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-stdio.o)
-                0x08006962                __sseek
+                0x080068da       0x38 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-stdio.o)
+                0x080068da                __swrite
+ .text.__sseek  0x08006912       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-stdio.o)
+                0x08006912                __sseek
  .text.__sclose
-                0x08006986        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-stdio.o)
-                0x08006986                __sclose
- .text.strlen   0x0800698e       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strlen.o)
-                0x0800698e                strlen
- .text.strncmp  0x0800699e       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strncmp.o)
-                0x0800699e                strncmp
- .text.strsep   0x080069d2        0xa c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strsep.o)
-                0x080069d2                strsep
- .text.strstr   0x080069dc       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strstr.o)
-                0x080069dc                strstr
+                0x08006936        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-stdio.o)
+                0x08006936                __sclose
+ .text.strlen   0x0800693e       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strlen.o)
+                0x0800693e                strlen
+ .text.strncmp  0x0800694e       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strncmp.o)
+                0x0800694e                strncmp
+ .text.strsep   0x08006982        0xa c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strsep.o)
+                0x08006982                strsep
+ .text.strstr   0x0800698c       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strstr.o)
+                0x0800698c                strstr
  .text.__strtok_r
-                0x08006a0c       0x56 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strtok_r.o)
-                0x08006a0c                __strtok_r
- *fill*         0x08006a62        0x2 
+                0x080069bc       0x56 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strtok_r.o)
+                0x080069bc                __strtok_r
+ *fill*         0x08006a12        0x2 
  .text._strtol_r
-                0x08006a64      0x10c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strtol.o)
-                0x08006a64                _strtol_r
- .text.strtol   0x08006b70       0x1c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strtol.o)
-                0x08006b70                strtol
+                0x08006a14      0x10c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strtol.o)
+                0x08006a14                _strtol_r
+ .text.strtol   0x08006b20       0x1c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strtol.o)
+                0x08006b20                strtol
  .text._vsprintf_r
-                0x08006b8c       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-vsprintf.o)
-                0x08006b8c                _vsprintf_r
-                0x08006b8c                _vsiprintf_r
+                0x08006b3c       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-vsprintf.o)
+                0x08006b3c                _vsprintf_r
+                0x08006b3c                _vsiprintf_r
  .text.vsprintf
-                0x08006bbc       0x1c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-vsprintf.o)
-                0x08006bbc                vsiprintf
-                0x08006bbc                vsprintf
+                0x08006b6c       0x1c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-vsprintf.o)
+                0x08006b6c                vsiprintf
+                0x08006b6c                vsprintf
  .text.__swbuf_r
-                0x08006bd8       0xa8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-wbuf.o)
-                0x08006bd8                __swbuf_r
+                0x08006b88       0xa8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-wbuf.o)
+                0x08006b88                __swbuf_r
  .text._write_r
-                0x08006c80       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-writer.o)
-                0x08006c80                _write_r
+                0x08006c30       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-writer.o)
+                0x08006c30                _write_r
  .text.__swsetup_r
-                0x08006ca4       0xd8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-wsetup.o)
-                0x08006ca4                __swsetup_r
+                0x08006c54       0xd8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-wsetup.o)
+                0x08006c54                __swsetup_r
  .text._close_r
-                0x08006d7c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-closer.o)
-                0x08006d7c                _close_r
+                0x08006d2c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-closer.o)
+                0x08006d2c                _close_r
  .text._lseek_r
-                0x08006d9c       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-lseekr.o)
-                0x08006d9c                _lseek_r
+                0x08006d4c       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-lseekr.o)
+                0x08006d4c                _lseek_r
  .text.__smakebuf_r
-                0x08006dc0       0x9c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-makebuf.o)
-                0x08006dc0                __smakebuf_r
- .text.memmove  0x08006e5c       0x36 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memmove.o)
-                0x08006e5c                memmove
+                0x08006d70       0x9c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-makebuf.o)
+                0x08006d70                __smakebuf_r
+ .text.memmove  0x08006e0c       0x36 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memmove.o)
+                0x08006e0c                memmove
  .text._realloc_r
-                0x08006e92       0x4c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-reallocr.o)
-                0x08006e92                _realloc_r
+                0x08006e42       0x4c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-reallocr.o)
+                0x08006e42                _realloc_r
  .text.__ssputs_r
-                0x08006ede       0xb2 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
-                0x08006ede                __ssputs_r
+                0x08006e8e       0xb2 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x08006e8e                __ssputs_r
  .text._svfprintf_r
-                0x08006f90      0x1e4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
-                0x08006f90                _svfiprintf_r
-                0x08006f90                _svfprintf_r
- .text._read_r  0x08007174       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-readr.o)
-                0x08007174                _read_r
+                0x08006f40      0x1e4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x08006f40                _svfiprintf_r
+                0x08006f40                _svfprintf_r
+ .text._read_r  0x08007124       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-readr.o)
+                0x08007124                _read_r
  .text._fstat_r
-                0x08007198       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fstatr.o)
-                0x08007198                _fstat_r
+                0x08007148       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fstatr.o)
+                0x08007148                _fstat_r
  .text._isatty_r
-                0x080071bc       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-isattyr.o)
-                0x080071bc                _isatty_r
+                0x0800716c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-isattyr.o)
+                0x0800716c                _isatty_r
  .text._malloc_usable_size_r
-                0x080071dc       0x14 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-msizer.o)
-                0x080071dc                _malloc_usable_size_r
- .text._getpid  0x080071f0       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(getpid.o)
-                0x080071f0                _getpid
- .text._kill    0x08007200       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(kill.o)
-                0x08007200                _kill
+                0x0800718c       0x14 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-msizer.o)
+                0x0800718c                _malloc_usable_size_r
+ .text._getpid  0x080071a0       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(getpid.o)
+                0x080071a0                _getpid
+ .text._kill    0x080071b0       0x10 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(kill.o)
+                0x080071b0                _kill
  *(.init)
- .init          0x08007210        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crti.o
-                0x08007210                _init
- .init          0x08007214        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn.o
+ .init          0x080071c0        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crti.o
+                0x080071c0                _init
+ .init          0x080071c4        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn.o
  *(.fini)
- .fini          0x0800721c        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crti.o
-                0x0800721c                _fini
- .fini          0x08007220        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn.o
+ .fini          0x080071cc        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crti.o
+                0x080071cc                _fini
+ .fini          0x080071d0        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -5304,138 +5292,138 @@ LOAD E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHA
  *(.dtors)
  *(.rodata*)
  .rodata.str1.4
-                0x08007228       0x8b E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/board.o
- *fill*         0x080072b3        0x1 
+                0x080071d8       0x8b E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/board.o
+ *fill*         0x08007263        0x1 
  .rodata.AHBPrescTable
-                0x080072b4       0x10 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o
-                0x080072b4                AHBPrescTable
- .rodata        0x080072c4       0x88 ..\obj\BufferedSerial.o
- *fill*         0x0800734c        0x4 
+                0x08007264       0x10 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/system_stm32f4xx.o
+                0x08007264                AHBPrescTable
+ .rodata        0x08007274       0x88 ..\obj\BufferedSerial.o
+ *fill*         0x080072fc        0x4 
  .rodata._ZTV14BufferedSerial
-                0x08007350       0x2c ..\obj\BufferedSerial.o
-                0x08007350                vtable for BufferedSerial
- *fill*         0x0800737c        0x4 
+                0x08007300       0x2c ..\obj\BufferedSerial.o
+                0x08007300                vtable for BufferedSerial
+ *fill*         0x0800732c        0x4 
  .rodata._ZTVN4mbed9RawSerialE
-                0x08007380       0x10 ..\obj\BufferedSerial.o
-                0x08007380                vtable for mbed::RawSerial
+                0x08007330       0x10 ..\obj\BufferedSerial.o
+                0x08007330                vtable for mbed::RawSerial
  .rodata._ZTVN4mbed10SerialBaseE
-                0x08007390       0x10 ..\obj\BufferedSerial.o
-                0x08007390                vtable for mbed::SerialBase
- .rodata        0x080073a0       0x2d ..\obj\cAssert.o
- *fill*         0x080073cd        0x3 
- .rodata        0x080073d0      0x374 ..\obj\main.o
- .rodata        0x08007744       0x39 ..\obj\stm32f4xx_it.o
- *fill*         0x0800777d        0x3 
+                0x08007340       0x10 ..\obj\BufferedSerial.o
+                0x08007340                vtable for mbed::SerialBase
+ .rodata        0x08007350       0x2d ..\obj\cAssert.o
+ *fill*         0x0800737d        0x3 
+ .rodata        0x08007380      0x374 ..\obj\main.o
+ .rodata        0x080076f4       0x39 ..\obj\stm32f4xx_it.o
+ *fill*         0x0800772d        0x3 
  .rodata.APBAHBPrescTable
-                0x08007780       0x10 ..\obj\stm32f4xx_hal_rcc.o
-                0x08007780                APBAHBPrescTable
- .rodata        0x08007790       0x41 ..\obj\I2CSlave1.o
- *fill*         0x080077d1        0x3 
- .rodata        0x080077d4       0x73 ..\obj\cRBTRS232ProtocolWrapper.o
- *fill*         0x08007847        0x1 
+                0x08007730       0x10 ..\obj\stm32f4xx_hal_rcc.o
+                0x08007730                APBAHBPrescTable
+ .rodata        0x08007740       0x41 ..\obj\I2CSlave1.o
+ *fill*         0x08007781        0x3 
+ .rodata        0x08007784       0x73 ..\obj\cRBTRS232ProtocolWrapper.o
+ *fill*         0x080077f7        0x1 
  .rodata._ZL17RBTProtocolEncode
-                0x08007848      0x2e6 ..\obj\cRBTRS232ProtocolWrapper.o
- *fill*         0x08007b2e        0x2 
- .rodata        0x08007b30       0xcf ..\obj\TestcIMUOdometry.o
- *fill*         0x08007bff        0x1 
+                0x080077f8      0x2e6 ..\obj\cRBTRS232ProtocolWrapper.o
+ *fill*         0x08007ade        0x2 
+ .rodata        0x08007ae0       0xbb ..\obj\TestcIMUOdometry.o
+ *fill*         0x08007b9b        0x1 
  .rodata.str1.4
-                0x08007c00       0x98 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x08007b9c       0x98 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
  .rodata.str1.4
-                0x08007c98       0x31 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(assert.o)
+                0x08007c34       0x31 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(assert.o)
  .rodata.str1.4
                 0x00000000       0x8b E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio.o)
- *fill*         0x08007cc9        0x3 
+ *fill*         0x08007c65        0x3 
  .rodata.str1.4
-                0x08007ccc       0x66 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
- *fill*         0x08007d32        0x2 
+                0x08007c68       0x66 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap_common.o)
+ *fill*         0x08007cce        0x2 
  .rodata.us_interface
-                0x08007d34       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
+                0x08007cd0       0x14 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
  .rodata.us_data
-                0x08007d48        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
+                0x08007ce4        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
  .rodata.PinMap_UART_RX
-                0x08007d50       0x54 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(PeripheralPins.o)
-                0x08007d50                PinMap_UART_RX
+                0x08007cec       0x54 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(PeripheralPins.o)
+                0x08007cec                PinMap_UART_RX
  .rodata.PinMap_UART_TX
-                0x08007da4       0x54 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(PeripheralPins.o)
-                0x08007da4                PinMap_UART_TX
+                0x08007d40       0x54 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(PeripheralPins.o)
+                0x08007d40                PinMap_UART_TX
  .rodata.str1.4
-                0x08007df8       0x73 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
+                0x08007d94       0x73 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(gpio_api.o)
                                  0x8c (size before relaxing)
- *fill*         0x08007e6b        0x1 
+ *fill*         0x08007e07        0x1 
  .rodata.gpio_mode
-                0x08007e6c       0x34 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
+                0x08007e08       0x34 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
  .rodata.str1.4
-                0x08007ea0       0x84 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
+                0x08007e3c       0x84 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
                                  0x95 (size before relaxing)
  .rodata.npio2_hw
-                0x08007f24       0x80 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-ef_rem_pio2.o)
+                0x08007ec0       0x80 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-ef_rem_pio2.o)
  .rodata.two_over_pi
-                0x08007fa4      0x318 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-ef_rem_pio2.o)
+                0x08007f40      0x318 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-ef_rem_pio2.o)
  .rodata.init_jk
-                0x080082bc        0xc c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_rem_pio2.o)
- .rodata.PIo2   0x080082c8       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_rem_pio2.o)
+                0x08008258        0xc c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_rem_pio2.o)
+ .rodata.PIo2   0x08008264       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_rem_pio2.o)
  .rodata._ctype_
-                0x080082f4      0x101 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-ctype_.o)
-                0x080082f4                _ctype_
- *fill*         0x080083f5        0x3 
+                0x08008290      0x101 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-ctype_.o)
+                0x08008290                _ctype_
+ *fill*         0x08008391        0x3 
  .rodata.__sf_fake_stdin
-                0x080083f8       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
-                0x080083f8                __sf_fake_stdin
+                0x08008394       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
+                0x08008394                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x08008418       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
-                0x08008418                __sf_fake_stdout
+                0x080083b4       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
+                0x080083b4                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x08008438       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
-                0x08008438                __sf_fake_stderr
+                0x080083d4       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
+                0x080083d4                __sf_fake_stderr
  .rodata.str1.1
-                0x08008458        0x2 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-impure.o)
- *fill*         0x0800845a        0x2 
+                0x080083f4        0x2 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-impure.o)
+ *fill*         0x080083f6        0x2 
  .rodata._global_impure_ptr
-                0x0800845c        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-impure.o)
-                0x0800845c                _global_impure_ptr
+                0x080083f8        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-impure.o)
+                0x080083f8                _global_impure_ptr
  .rodata.str1.1
-                0x08008460       0x11 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x080083fc       0x11 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata.str1.1
-                0x08008471       0x22 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0800840d       0x22 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
  .rodata.str1.1
                 0x00000000       0x11 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
  *(.eh_frame*)
- *fill*         0x08008493        0x1 
- .eh_frame      0x08008494        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
- .eh_frame      0x08008494        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strcmp.o)
+ *fill*         0x0800842f        0x1 
+ .eh_frame      0x08008430        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
+ .eh_frame      0x08008430        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strcmp.o)
                                  0x28 (size before relaxing)
- .eh_frame      0x08008494        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtend.o
+ .eh_frame      0x08008430        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtend.o
 
-.glue_7         0x08008498        0x0
+.glue_7         0x08008434        0x0
  .glue_7        0x00000000        0x0 linker stubs
 
-.glue_7t        0x08008498        0x0
+.glue_7t        0x08008434        0x0
  .glue_7t       0x00000000        0x0 linker stubs
 
-.vfp11_veneer   0x08008498        0x0
+.vfp11_veneer   0x08008434        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x08008498        0x0
+.v4_bx          0x08008434        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x08008498        0x0
+.iplt           0x08008434        0x0
  .iplt          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x08008498                __exidx_start = .
+                0x08008434                __exidx_start = .
 
-.ARM.exidx      0x08008498        0x8
+.ARM.exidx      0x08008434        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x08008498        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
-                0x080084a0                __exidx_end = .
-                0x080084a0                __etext = .
-                0x080084a0                _sidata = .
+ .ARM.exidx     0x08008434        0x8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp/crt0.o
+                0x0800843c                __exidx_end = .
+                0x0800843c                __etext = .
+                0x0800843c                _sidata = .
 
-.rel.dyn        0x080084a0        0x0
+.rel.dyn        0x0800843c        0x0
  .rel.iplt      0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
 
-.data           0x20000198       0x84 load address 0x080084a0
+.data           0x20000198       0x84 load address 0x0800843c
                 0x20000198                __data_start__ = .
                 0x20000198                _sdata = .
  *(vtable)
@@ -5479,10 +5467,10 @@ LOAD E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHA
                 0x2000021c                __data_end__ = .
                 0x2000021c                _edata = .
 
-.igot.plt       0x2000021c        0x0 load address 0x08008524
+.igot.plt       0x2000021c        0x0 load address 0x080084c0
  .igot.plt      0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/softfp/crtbegin.o
 
-.bss            0x2000021c      0x718 load address 0x08008524
+.bss            0x2000021c      0x77c load address 0x080084c0
                 0x2000021c                . = ALIGN (0x4)
                 0x2000021c                __bss_start__ = .
                 0x2000021c                _sbss = .
@@ -5535,47 +5523,49 @@ LOAD E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHA
                 0x20000654                uwTick
  .bss._ZZ21DebugLog_cIMUOdometryP14_cIMUOdometry_E8lastTime
                 0x20000658        0x4 ..\obj\TestcIMUOdometry.o
+ .bss._ZZ21DebugLog_cIMUOdometryP14_cIMUOdometry_E6myBuff
+                0x2000065c       0x64 ..\obj\TestcIMUOdometry.o
  .bss.serial_irq_ids
-                0x2000065c       0x20 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x2000065c                serial_irq_ids
+                0x200006c0       0x20 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x200006c0                serial_irq_ids
  .bss.irq_handler
-                0x2000067c        0x4 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x200006e0        0x4 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
  .bss.stdio_uart_inited
-                0x20000680        0x4 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x20000680                stdio_uart_inited
+                0x200006e4        0x4 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x200006e4                stdio_uart_inited
  .bss.UartHandle
-                0x20000684      0x200 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x200006e8      0x200 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
  .bss.TimMasterHandle
-                0x20000884       0x3c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+                0x200008e8       0x3c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
  .bss.us_ticker_inited
-                0x200008c0        0x4 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
- .bss.events    0x200008c4        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
+                0x20000924        0x4 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker.o)
+ .bss.events    0x20000928        0x8 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(us_ticker_api.o)
  .bss._ZN12_GLOBAL__N_113__new_handlerE
-                0x200008cc        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_handler.o)
+                0x20000930        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_handler.o)
  .bss.__malloc_sbrk_start
-                0x200008d0        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x200008d0                __malloc_sbrk_start
+                0x20000934        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x20000934                __malloc_sbrk_start
  .bss.__malloc_free_list
-                0x200008d4        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
-                0x200008d4                __malloc_free_list
+                0x20000938        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+                0x20000938                __malloc_free_list
  *(COMMON)
- COMMON         0x200008d8       0x3c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/hal_tick.o
-                0x200008d8                TimMasterHandle
- COMMON         0x20000914       0x1c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
-                0x20000914                stdio_uart
- COMMON         0x20000930        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-reent.o)
-                0x20000930                errno
-                0x20000934                . = ALIGN (0x4)
-                0x20000934                __bss_end__ = .
-                0x20000934                _ebss = .
+ COMMON         0x2000093c       0x3c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM/hal_tick.o
+                0x2000093c                TimMasterHandle
+ COMMON         0x20000978       0x1c E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(serial_api.o)
+                0x20000978                stdio_uart
+ COMMON         0x20000994        0x4 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-reent.o)
+                0x20000994                errno
+                0x20000998                . = ALIGN (0x4)
+                0x20000998                __bss_end__ = .
+                0x20000998                _ebss = .
 
-.heap           0x20000934        0x0
-                0x20000934                __end__ = .
-                0x20000934                end = __end__
+.heap           0x20000998        0x0
+                0x20000998                __end__ = .
+                0x20000998                end = __end__
  *(.heap*)
-                0x20000934                __HeapLimit = .
+                0x20000998                __HeapLimit = .
 
-.stack_dummy    0x20000934        0x0
+.stack_dummy    0x20000998        0x0
  *(.stack*)
                 0x20020000                __StackTop = (ORIGIN (RAM) + 0x1fe68)
                 0x20020000                _estack = __StackTop
@@ -5976,7 +5966,7 @@ OUTPUT(hmc5883lEmulator.elf elf32-littlearm)
  .comment       0x00000000       0x71 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(pinmap.o)
  .comment       0x00000000       0x71 E:\HopeProject\minecraft\hmc5883lEmulator/mbed/TARGET_NUCLEO_F411RE/TOOLCHAIN_GCC_ARM\libmbed.a(ticker_api.o)
 
-.debug_info     0x00000000    0x14d9f
+.debug_info     0x00000000    0x14dac
  .debug_info    0x00000000     0x2287 ..\obj\BufferedSerial.o
  .debug_info    0x00002287     0x212f ..\obj\stm32f4xx_hal_i2c.o
  .debug_info    0x000043b6      0xef8 ..\obj\stm32f4xx_hal_uart.o
@@ -5994,8 +5984,8 @@ OUTPUT(hmc5883lEmulator.elf elf32-littlearm)
  .debug_info    0x0000f55f      0x722 ..\obj\stm32f4xx_hal_gpio.o
  .debug_info    0x0000fc81     0x1441 ..\obj\cRBTRS232ProtocolWrapper.o
  .debug_info    0x000110c2       0xe5 ..\obj\stm32f4xx_hal_msp_template.o
- .debug_info    0x000111a7     0x1cf8 ..\obj\TestcIMUOdometry.o
- .debug_info    0x00012e9f     0x1f00 ..\obj\cIMUOdometry.o
+ .debug_info    0x000111a7     0x1d05 ..\obj\TestcIMUOdometry.o
+ .debug_info    0x00012eac     0x1f00 ..\obj\cIMUOdometry.o
 
 .debug_abbrev   0x00000000     0x286d
  .debug_abbrev  0x00000000      0x50a ..\obj\BufferedSerial.o
@@ -6079,7 +6069,7 @@ OUTPUT(hmc5883lEmulator.elf elf32-littlearm)
  .debug_ranges  0x00000f88       0x40 ..\obj\TestcIMUOdometry.o
  .debug_ranges  0x00000fc8       0x50 ..\obj\cIMUOdometry.o
 
-.debug_line     0x00000000     0x74e1
+.debug_line     0x00000000     0x74d0
  .debug_line    0x00000000      0x72a ..\obj\BufferedSerial.o
  .debug_line    0x0000072a     0x1368 ..\obj\stm32f4xx_hal_i2c.o
  .debug_line    0x00001a92      0x92a ..\obj\stm32f4xx_hal_uart.o
@@ -6097,8 +6087,8 @@ OUTPUT(hmc5883lEmulator.elf elf32-littlearm)
  .debug_line    0x0000603a      0x349 ..\obj\stm32f4xx_hal_gpio.o
  .debug_line    0x00006383      0x475 ..\obj\cRBTRS232ProtocolWrapper.o
  .debug_line    0x000067f8      0x19e ..\obj\stm32f4xx_hal_msp_template.o
- .debug_line    0x00006996      0x564 ..\obj\TestcIMUOdometry.o
- .debug_line    0x00006efa      0x5e7 ..\obj\cIMUOdometry.o
+ .debug_line    0x00006996      0x552 ..\obj\TestcIMUOdometry.o
+ .debug_line    0x00006ee8      0x5e8 ..\obj\cIMUOdometry.o
 
 .debug_str      0x00000000     0x67ea
  .debug_str     0x00000000     0x11d8 ..\obj\BufferedSerial.o
@@ -6135,12 +6125,12 @@ OUTPUT(hmc5883lEmulator.elf elf32-littlearm)
                                 0xa64 (size before relaxing)
  .debug_str     0x00005a8f       0x83 ..\obj\stm32f4xx_hal_msp_template.o
                                 0x29f (size before relaxing)
- .debug_str     0x00005b12      0x1ab ..\obj\TestcIMUOdometry.o
-                               0x13c1 (size before relaxing)
- .debug_str     0x00005cbd      0xb2d ..\obj\cIMUOdometry.o
+ .debug_str     0x00005b12      0x1b5 ..\obj\TestcIMUOdometry.o
+                               0x13d3 (size before relaxing)
+ .debug_str     0x00005cc7      0xb23 ..\obj\cIMUOdometry.o
                                0x1c7d (size before relaxing)
 
-.debug_frame    0x00000000     0x5adc
+.debug_frame    0x00000000     0x5ad0
  .debug_frame   0x00000000      0x3d4 ..\obj\BufferedSerial.o
  .debug_frame   0x000003d4      0xb44 ..\obj\stm32f4xx_hal_i2c.o
  .debug_frame   0x00000f18      0x664 ..\obj\stm32f4xx_hal_uart.o
@@ -6158,74 +6148,74 @@ OUTPUT(hmc5883lEmulator.elf elf32-littlearm)
  .debug_frame   0x00004520      0x14c ..\obj\stm32f4xx_hal_gpio.o
  .debug_frame   0x0000466c       0xd4 ..\obj\cRBTRS232ProtocolWrapper.o
  .debug_frame   0x00004740       0x90 ..\obj\stm32f4xx_hal_msp_template.o
- .debug_frame   0x000047d0      0x118 ..\obj\TestcIMUOdometry.o
- .debug_frame   0x000048e8      0x164 ..\obj\cIMUOdometry.o
- .debug_frame   0x00004a4c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_opv.o)
- .debug_frame   0x00004a6c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(atexit_arm.o)
- .debug_frame   0x00004a8c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_op.o)
- .debug_frame   0x00004aac       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_op.o)
- .debug_frame   0x00004ad4       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_opv.o)
- .debug_frame   0x00004af4       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_handler.o)
- .debug_frame   0x00004b24       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_cos.o)
- .debug_frame   0x00004b58       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_sin.o)
- .debug_frame   0x00004b8c       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-ef_rem_pio2.o)
- .debug_frame   0x00004bc8       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_cos.o)
- .debug_frame   0x00004be8       0x5c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_rem_pio2.o)
- .debug_frame   0x00004c44       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_sin.o)
- .debug_frame   0x00004c64       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_fabs.o)
- .debug_frame   0x00004c84       0x48 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_floor.o)
- .debug_frame   0x00004ccc       0x68 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_scalbn.o)
- .debug_frame   0x00004d34       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_copysign.o)
- .debug_frame   0x00004d54       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-abort.o)
- .debug_frame   0x00004d7c       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-atoi.o)
- .debug_frame   0x00004dac       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-cxa_atexit.o)
- .debug_frame   0x00004dd8       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-errno.o)
- .debug_frame   0x00004df8       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-exit.o)
- .debug_frame   0x00004e20       0x68 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fflush.o)
- .debug_frame   0x00004e88      0x11c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
- .debug_frame   0x00004fa4       0x64 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fprintf.o)
- .debug_frame   0x00005008       0x44 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fputc.o)
- .debug_frame   0x0000504c       0x54 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fwalk.o)
- .debug_frame   0x000050a0       0x54 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fwrite.o)
- .debug_frame   0x000050f4       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-init.o)
- .debug_frame   0x00005120       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-malloc.o)
- .debug_frame   0x00005150       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memchr.o)
- .debug_frame   0x00005178       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memcpy.o)
- .debug_frame   0x000051a0       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memset.o)
- .debug_frame   0x000051c0       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x000051ec       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x00005218       0xb8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x000052d0       0x58 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x00005328       0x74 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-printf.o)
- .debug_frame   0x0000539c       0x48 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putc.o)
- .debug_frame   0x000053e4       0x5c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-reent.o)
- .debug_frame   0x00005440       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x0000546c       0xcc c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signal.o)
- .debug_frame   0x00005538       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signalr.o)
- .debug_frame   0x00005574       0x70 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-sprintf.o)
- .debug_frame   0x000055e4       0x88 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-stdio.o)
- .debug_frame   0x0000566c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strlen.o)
- .debug_frame   0x0000568c       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strncmp.o)
- .debug_frame   0x000056b8       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strsep.o)
- .debug_frame   0x000056d8       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strstr.o)
- .debug_frame   0x00005704       0x40 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strtok_r.o)
- .debug_frame   0x00005744       0x54 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strtol.o)
- .debug_frame   0x00005798       0x50 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-vsprintf.o)
- .debug_frame   0x000057e8       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-wbuf.o)
- .debug_frame   0x00005824       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-writer.o)
- .debug_frame   0x00005850       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-wsetup.o)
- .debug_frame   0x0000587c       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-closer.o)
- .debug_frame   0x000058a8       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-lseekr.o)
- .debug_frame   0x000058d4       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-makebuf.o)
- .debug_frame   0x00005908       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memmove.o)
- .debug_frame   0x00005930       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x0000596c       0x8c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
- .debug_frame   0x000059f8       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-readr.o)
- .debug_frame   0x00005a24       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fstatr.o)
- .debug_frame   0x00005a50       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-isattyr.o)
- .debug_frame   0x00005a7c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-msizer.o)
- .debug_frame   0x00005a9c       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(getpid.o)
- .debug_frame   0x00005abc       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(kill.o)
+ .debug_frame   0x000047d0      0x10c ..\obj\TestcIMUOdometry.o
+ .debug_frame   0x000048dc      0x164 ..\obj\cIMUOdometry.o
+ .debug_frame   0x00004a40       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_opv.o)
+ .debug_frame   0x00004a60       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(atexit_arm.o)
+ .debug_frame   0x00004a80       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_op.o)
+ .debug_frame   0x00004aa0       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_op.o)
+ .debug_frame   0x00004ac8       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_opv.o)
+ .debug_frame   0x00004ae8       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_handler.o)
+ .debug_frame   0x00004b18       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_cos.o)
+ .debug_frame   0x00004b4c       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_sin.o)
+ .debug_frame   0x00004b80       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-ef_rem_pio2.o)
+ .debug_frame   0x00004bbc       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_cos.o)
+ .debug_frame   0x00004bdc       0x5c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_rem_pio2.o)
+ .debug_frame   0x00004c38       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-kf_sin.o)
+ .debug_frame   0x00004c58       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_fabs.o)
+ .debug_frame   0x00004c78       0x48 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_floor.o)
+ .debug_frame   0x00004cc0       0x68 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_scalbn.o)
+ .debug_frame   0x00004d28       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libm.a(lib_a-sf_copysign.o)
+ .debug_frame   0x00004d48       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-abort.o)
+ .debug_frame   0x00004d70       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-atoi.o)
+ .debug_frame   0x00004da0       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-cxa_atexit.o)
+ .debug_frame   0x00004dcc       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-errno.o)
+ .debug_frame   0x00004dec       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x00004e14       0x68 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x00004e7c      0x11c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00004f98       0x64 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fprintf.o)
+ .debug_frame   0x00004ffc       0x44 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fputc.o)
+ .debug_frame   0x00005040       0x54 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x00005094       0x54 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fwrite.o)
+ .debug_frame   0x000050e8       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-init.o)
+ .debug_frame   0x00005114       0x30 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-malloc.o)
+ .debug_frame   0x00005144       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memchr.o)
+ .debug_frame   0x0000516c       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memcpy.o)
+ .debug_frame   0x00005194       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x000051b4       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x000051e0       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x0000520c       0xb8 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x000052c4       0x58 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000531c       0x74 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-printf.o)
+ .debug_frame   0x00005390       0x48 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-putc.o)
+ .debug_frame   0x000053d8       0x5c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x00005434       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00005460       0xcc c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signal.o)
+ .debug_frame   0x0000552c       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-signalr.o)
+ .debug_frame   0x00005568       0x70 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-sprintf.o)
+ .debug_frame   0x000055d8       0x88 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-stdio.o)
+ .debug_frame   0x00005660       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strlen.o)
+ .debug_frame   0x00005680       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strncmp.o)
+ .debug_frame   0x000056ac       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strsep.o)
+ .debug_frame   0x000056cc       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strstr.o)
+ .debug_frame   0x000056f8       0x40 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strtok_r.o)
+ .debug_frame   0x00005738       0x54 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-strtol.o)
+ .debug_frame   0x0000578c       0x50 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-vsprintf.o)
+ .debug_frame   0x000057dc       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00005818       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-writer.o)
+ .debug_frame   0x00005844       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x00005870       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-closer.o)
+ .debug_frame   0x0000589c       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x000058c8       0x34 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x000058fc       0x28 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-memmove.o)
+ .debug_frame   0x00005924       0x3c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x00005960       0x8c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-svfprintf.o)
+ .debug_frame   0x000059ec       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-readr.o)
+ .debug_frame   0x00005a18       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x00005a44       0x2c c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x00005a70       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libc_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x00005a90       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(getpid.o)
+ .debug_frame   0x00005ab0       0x20 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(kill.o)
 
 .stab           0x00000000       0x3c
  .stab          0x00000000       0x24 c:/program files (x86)/gnu tools arm embedded/4.9 2015q3/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(getpid.o)

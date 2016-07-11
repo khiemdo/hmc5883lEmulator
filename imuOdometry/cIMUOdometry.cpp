@@ -28,17 +28,39 @@ float_t ConvertCounterToArcLength(float_t counter, float_t wheelCircumference,
 //	float_t fractPart = 0;
 //	fractPart = modff(counter * wheelCircumference / ppr, &intPart);
 //	return fractPart;
-	return counter * wheelCircumference * 1.0 / ppr;
+	return counter * wheelCircumference / ppr;
 }
 void ConvertCounterToXYZ_cIMUOdometry(cIMUOdometry* me, float_t mmLeft,
 		float_t mmRight, float_t mmWheelBase) {
 	me->theta = (mmLeft - mmRight) / mmWheelBase;
 	me->thetaDegree = me->theta / M_PI * 180;
 	me->distance = (mmLeft + mmRight) / 2;
-	me->XOutput = -800 * cosf(me->theta);
-	me->YOutput = 800 * sinf(me->theta);
+	me->XOutput = -SCALE_OF_UNIT_VECTOR * cosf(me->theta);
+	me->YOutput = SCALE_OF_UNIT_VECTOR * sinf(me->theta);
 }
+void UpdateOdometry_cIMUOdometry(cIMUOdometry* me) {
+	me->mmLeft = ConvertCounterToArcLength((float_t) me->counter[0],
+			(float_t) WHEEL_CIRCUMFERENCE, (float_t) PPR_DRUM_ENCODER);
+	me->mmRight = ConvertCounterToArcLength((float_t) me->counter[1],
+			(float_t) WHEEL_CIRCUMFERENCE, (float_t) PPR_DRUM_ENCODER);
+	ConvertCounterToXYZ_cIMUOdometry(me, me->mmLeft, me->mmRight,
+			(float_t) WHEEL_BASE);
 
+	uint8_t* buffPtr = me->memory + HMC5883L_X_MSB;
+
+	int16_t number16 = (int16_t)(me->XOutput);
+	int16_t swapNumber16 = SWAP_UINT16T(number16);
+	memcpy(buffPtr, &swapNumber16, sizeof(int16_t));
+	buffPtr += 2;
+
+	swapNumber16 = 0;
+	memcpy(buffPtr, &swapNumber16, sizeof(int16_t));
+	buffPtr += 2;
+
+	number16 = (int16_t)(me->YOutput);
+	swapNumber16 = SWAP_UINT16T(number16);
+	memcpy(buffPtr, &swapNumber16, sizeof(int16_t));
+}
 void HandleRBTSerial_cIMUOdometry(cIMUOdometry* me) {
 	int8_t ch = 0;
 	if (me->inCom->readable()) {
@@ -50,36 +72,15 @@ void HandleRBTSerial_cIMUOdometry(cIMUOdometry* me) {
 				me->frameGetter->outputFrame, 0,
 				GET_CHANNEL_COUNTER_RBTProtocol, me->counter);
 		if (ret == 2) {
-			DEBUG(LOG_INFO, "counter:%d;%d\r\n", me->counter[0],
-					me->counter[1]);
+			DEBUG(LOG_TEST, "counter:%d;%d\r\n",
+					me->counter[0], me->counter[1]);
+			UpdateOdometry_cIMUOdometry(me);
 		}
 	}
 }
-void UpdateOdometry_cIMUOdometry(cIMUOdometry* me) {
-	me->mmLeft = ConvertCounterToArcLength(me->counter[0], WHEEL_CIRCUMFERENCE,
-			PPR_DRUM_ENCODER);
-	me->mmRight = ConvertCounterToArcLength(me->counter[1], WHEEL_CIRCUMFERENCE,
-			PPR_DRUM_ENCODER);
-	ConvertCounterToXYZ_cIMUOdometry(me, me->mmLeft, me->mmRight, WHEEL_BASE);
 
-	uint8_t* buffPtr = me->memory + HMC5883L_X_MSB;
-
-	int16_t number16 = (int16_t)(me->XOutput);
-	int16_t swapNumber16 = SWAP_UINT16T(number16);
-	memcpy(buffPtr, &swapNumber16, sizeof(int16_t));
-	buffPtr += 2;
-
-	number16 = 0;
-	memcpy(buffPtr, &number16, sizeof(int16_t));
-	buffPtr += 2;
-
-	number16 = (int16_t)(me->YOutput);
-	swapNumber16 = SWAP_UINT16T(number16);
-	memcpy(buffPtr, &swapNumber16, sizeof(int16_t));
-}
 
 void Loop_cIMUOdometry(cIMUOdometry* me) {
 	HandleRBTSerial_cIMUOdometry(me);
-	UpdateOdometry_cIMUOdometry(me);
 }
 

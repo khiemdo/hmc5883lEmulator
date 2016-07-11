@@ -1,12 +1,12 @@
-
-#define WHEEL_BASE 			(1368)
+#define WHEEL_BASE 			(684)	//684-----690.2
 #define WHEEL_CIRCUMFERENCE	(1320)
 #define PPR_DRUM_ENCODER	(5000)
+#define SCALE_OF_UNIT_VECTOR	(250)
+#define DEBUG_PRINT_PERIOD			(1000)
+#define RBT_QUERY_PERIOD			(10)	//frequency = 100hz
 
 #define HMC5883L_I2C_ADDRESS 		(0x3C) //7-bit address. 0x3C write, 0x3D read.
 #define HMC5883L_I2C_FREQUENCY		(200000)
-#define HMC5883L_I2C_WRITE   (0x3C)
-#define HMC5883L_I2C_READ    (0x3D)
 
 #define HMC5883L_CONFIG_A     0x00
 #define HMC5883L_CONFIG_B     0x01

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -mthumb -Wall -ffunction-sections -g -O0 -fno-common -fmessage-length=0 -Wall -fno-strict-aliasing -fno-rtti -fno-exceptions -ffunction-sections -fdata-sections -std=gnu++98 -c -DMBED_BUILD_TIMESTAMP=1467289148.25 -DTARGET_RTOS_M4_M7 -DTARGET_FF_ARDUINO -DTOOLCHAIN_GCC_ARM -DTARGET_NUCLEO_F411RE -D__CORTEX_M4 -DTARGET_LIKE_MBED -DTARGET_CORTEX_M -D__FPU_PRESENT=1 -DTARGET_LIKE_CORTEX_M4 -DTARGET_M4 -D__MBED__=1 -DTARGET_STM -DTARGET_STM32F4 -DTARGET_FF_MORPHO -DTOOLCHAIN_GCC -DTARGET_STM32F411RE -DARM_MATH_CM4 -DSTM32F415VG -DSTM32F4XX -IE:\HopeProject\minecraft\hmc5883lEmulator\BufferedSerial -IE:\HopeProject\minecraft\hmc5883lEmulator\myLib -IE:\HopeProject\minecraft\hmc5883lEmulator\RBTRS232Protocol -IE:\HopeProject -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed\TARGET_NUCLEO_F411RE\TARGET_STM -IE:\HopeProject\minecraft\hmc5883lEmulator\BufferedSerial\Buffer -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed\TARGET_NUCLEO_F411RE\TOOLCHAIN_GCC_ARM -IE:\HopeProject\minecraft\hmc5883lEmulator\myLib\stm32f4 -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed\TARGET_NUCLEO_F411RE\TARGET_STM\TARGET_STM32F4\TARGET_NUCLEO_F411RE -IE:\HopeProject\minecraft\hmc5883lEmulator\i2cSlave -IE:\HopeProject\minecraft -IE:\HopeProject\minecraft\hmc5883lEmulator\greatest -IE:\HopeProject\minecraft\hmc5883lEmulator\imuOdometry -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed\TARGET_NUCLEO_F411RE -IE:\HopeProject\minecraft\hmc5883lEmulator\myLib\CRC -IE:\HopeProject\minecraft\hmc5883lEmulator\myLib\FSM -IE:\HopeProject\minecraft\hmc5883lEmulator -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed -IE:\HopeProject\minecraft\hmc5883lEmulator\mbed\TARGET_NUCLEO_F411RE\TARGET_STM\TARGET_STM32F4">
-      <target file="cFrameMsgGetter.o" lastModified="155afaab69b">
+      <target file="cFrameMsgGetter.o" lastModified="155b5428592">
          <source file="..\..\..\myLib\cFrameMsgGetter.c" lastModified="155a2b62122"/>
       </target>
       <target file="stm32f4xx_hal_usart.o" lastModified="155ab338248">
@@ -13,19 +13,19 @@
       <target file="stm32f4xx_hal_i2c_ex.o" lastModified="155ab339952">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_i2c_ex.c" lastModified="15533f02dd6"/>
       </target>
-      <target file="cRingBuffer.o" lastModified="155afaab467">
+      <target file="cRingBuffer.o" lastModified="155b54283dc">
          <source file="..\..\..\myLib\cRingBuffer.c" lastModified="155a029b3e0"/>
       </target>
       <target file="MyBuffer.o" lastModified="155ab33973e">
          <source file="..\..\..\BufferedSerial\Buffer\MyBuffer.cpp" lastModified="155a1401a83"/>
       </target>
-      <target file="I2CSlave1.o" lastModified="155b01f6daa">
+      <target file="I2CSlave1.o" lastModified="155bdd4266a">
          <source file="..\..\..\i2cSlave\I2CSlave1.cpp" lastModified="155ad735727"/>
       </target>
       <target file="stm32f4xx_hal_eth.o" lastModified="155ab3379e8">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_eth.c" lastModified="15533f02d5c"/>
       </target>
-      <target file="TestcEncoder.o" lastModified="155b01f6a88">
+      <target file="TestcEncoder.o" lastModified="155bdd41c8e">
          <source file="..\..\..\myLib\TestcEncoder.cpp" lastModified="155a029b38b"/>
       </target>
       <target file="stm32f4xx_hal_pccard.o" lastModified="155ab339aef">
@@ -85,7 +85,7 @@
       <target file="stm32f4xx_hal_dma.o" lastModified="155ab33a272">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_dma.c" lastModified="15533f02d2d"/>
       </target>
-      <target file="cDebugUart.o" lastModified="155afaab609">
+      <target file="cDebugUart.o" lastModified="155b54284f9">
          <source file="..\..\..\myLib\stm32f4\cDebugUart.c" lastModified="155a029b9e2"/>
       </target>
       <target file="stm32f4xx_hal_irda.o" lastModified="155ab338a05">
@@ -97,7 +97,7 @@
       <target file="stm32f4xx_hal_ltdc.o" lastModified="155ab337801">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_ltdc.c" lastModified="15533f02e05"/>
       </target>
-      <target file="TestcFrameMsgGetter.o" lastModified="155afaab4da">
+      <target file="TestcFrameMsgGetter.o" lastModified="155b5428465">
          <source file="..\..\..\myLib\TestcFrameMsgGetter.c" lastModified="155a4c4fb66"/>
       </target>
       <target file="stm32f4xx_hal_adc_ex.o" lastModified="155ab338afc">
@@ -109,10 +109,10 @@
       <target file="stm32f4xx_hal_rtc_ex.o" lastModified="155ab338d24">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_rtc_ex.c" lastModified="15533f02e79"/>
       </target>
-      <target file="cAssert.o" lastModified="155afaab738">
+      <target file="cAssert.o" lastModified="155b5428635">
          <source file="..\..\..\myLib\cAssert.c" lastModified="155a029b38c"/>
       </target>
-      <target file="TestCRC.o" lastModified="155afaabc0d">
+      <target file="TestCRC.o" lastModified="155b54289ba">
          <source file="..\..\..\myLib\CRC\TestCRC.c" lastModified="155a029b37c"/>
       </target>
       <target file="stm32f4xx_hal_rcc_ex.o" lastModified="155ab338eb9">
@@ -142,7 +142,7 @@
       <target file="stm32f4xx_hal_rng.o" lastModified="155ab33779d">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_rng.c" lastModified="15533f02e6a"/>
       </target>
-      <target file="FSM.o" lastModified="155afaab87c">
+      <target file="FSM.o" lastModified="155b5428772">
          <source file="..\..\..\myLib\FSM\FSM.c" lastModified="155a029b386"/>
       </target>
       <target file="stm32f4xx_hal_sd.o" lastModified="155ab338c72">
@@ -178,8 +178,8 @@
       <target file="testTelemetry.o" lastModified="155ab33a537">
          <source file="..\..\..\myLib\testTelemetry.c" lastModified="155a029b9fb"/>
       </target>
-      <target file="cIMUOdometry.o" lastModified="155b01f6fe4">
-         <source file="..\..\..\imuOdometry\cIMUOdometry.cpp" lastModified="155aff5ed6d"/>
+      <target file="cIMUOdometry.o" lastModified="155bdd42895">
+         <source file="..\..\..\imuOdometry\cIMUOdometry.cpp" lastModified="155bb191b5d"/>
       </target>
       <target file="stm32f4xx_hal_cortex.o" lastModified="155ab3392d3">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_cortex.c" lastModified="15533f02cd8"/>
@@ -187,7 +187,7 @@
       <target file="stm32f4xx_hal_pcd.o" lastModified="155ab3395b8">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_pcd.c" lastModified="15533f02e25"/>
       </target>
-      <target file="cRBTRS232ProtocolWrapper.o" lastModified="155afce5798">
+      <target file="cRBTRS232ProtocolWrapper.o" lastModified="155b5eecd05">
          <source file="..\..\..\RBTRS232Protocol\cRBTRS232ProtocolWrapper.cpp" lastModified="155a4c4fb85"/>
       </target>
       <target file="stm32f4xx_hal_pcd_ex.o" lastModified="155ab3397ac">
@@ -208,8 +208,8 @@
       <target file="stm32f4xx_hal_rtc.o" lastModified="155ab337b7d">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_rtc.c" lastModified="15533f02e6a"/>
       </target>
-      <target file="TestcIMUOdometry.o" lastModified="155b01f6f2b">
-         <source file="..\..\..\imuOdometry\TestcIMUOdometry.cpp" lastModified="155afab5309"/>
+      <target file="TestcIMUOdometry.o" lastModified="155bdd427ec">
+         <source file="..\..\..\imuOdometry\TestcIMUOdometry.cpp" lastModified="155b5ecc245"/>
       </target>
       <target file="stm32f4xx_hal_flash_ramfunc.o" lastModified="155ab3374a5">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_flash_ramfunc.c" lastModified="15533f02d82"/>
@@ -217,13 +217,13 @@
       <target file="stm32f4xx_hal_tim.o" lastModified="155ab337d90">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_tim.c" lastModified="15533f02ebe"/>
       </target>
-      <target file="stm32f4xx_it.o" lastModified="155b01f6c4b">
-         <source file="..\..\..\stm32f4xx_it.c" lastModified="155afcc743a"/>
+      <target file="stm32f4xx_it.o" lastModified="155bdd4251f">
+         <source file="..\..\..\stm32f4xx_it.c" lastModified="155b5496f41"/>
       </target>
-      <target file="cEncoder.o" lastModified="155b01f6b0c">
+      <target file="cEncoder.o" lastModified="155bdd42280">
          <source file="..\..\..\myLib\cEncoder.c" lastModified="155a029b3c9"/>
       </target>
-      <target file="generalUtility.o" lastModified="155afce56df">
+      <target file="generalUtility.o" lastModified="155b5eecc2e">
          <source file="..\..\..\myLib\generalUtility.c" lastModified="155a07424bb"/>
       </target>
       <target file="stm32f4xx_ll_fsmc.o" lastModified="155ab337ad8">
@@ -259,10 +259,10 @@
       <target file="stm32f4xx_hal_nor.o" lastModified="155ab3399b9">
          <source file="..\..\..\mbed\TARGET_NUCLEO_F411RE\stm32f4xx_hal_nor.c" lastModified="15533f02e15"/>
       </target>
-      <target file="TestcRBTRS232ProtocolWrapper.o" lastModified="155b01f6d26">
+      <target file="TestcRBTRS232ProtocolWrapper.o" lastModified="155bdd425e7">
          <source file="..\..\..\RBTRS232Protocol\TestcRBTRS232ProtocolWrapper.cpp" lastModified="1553fa71b77"/>
       </target>
-      <target file="main.o" lastModified="155b01f6bd4">
+      <target file="main.o" lastModified="155bdd424ab">
          <source file="..\..\..\main.cpp" lastModified="155ad1f4077"/>
       </target>
       <target file="stm32f4xx_hal_flash.o" lastModified="155ab3386bc">

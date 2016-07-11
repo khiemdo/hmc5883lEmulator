@@ -50,11 +50,11 @@ TEST TestI2CPort_cIMUOdometry() {
 	uint8_t data[10];
 	while (1) {
 		if (__HAL_I2C_GET_FLAG(me->outCom1,I2C_FLAG_ADDR)) {
-			DEBUG(LOG_TEST, "got msg\r\n", 0);
+			DEBUG(LOG_INFO, "got msg\r\n", 0);
 		}
 		HAL_StatusTypeDef ret = HAL_I2C_Slave_Receive_IT(me->outCom1, data, 2);
 		if (ret == HAL_OK) {
-			DEBUG(LOG_TEST, "got msg\r\n", 0);
+			DEBUG(LOG_INFO, "got msg\r\n", 0);
 		}
 	}
 
@@ -66,13 +66,11 @@ TEST TestSerialPort_cIMUOdometry() {
 	wait_us(100);
 	while (me->inCom->readable()) {
 		char ch = me->inCom->getc();
-		printf("%c", ch);
+		DEBUG(LOG_INFO, "%c", ch);
 		test = 1;
 	}
 	if (test == 1)
 		PASS();
-	else if (test == 0)
-		FAIL();
 	else
 		FAIL();
 }
@@ -85,7 +83,7 @@ TEST TestHandleRBTSerial_cIMUOdometry() {
 		uint32_t currentTime = HAL_GetTick();
 		int deltaTime = currentTime - lastTime;
 		if (deltaTime > 50) {
-			me->inCom->printf("?C\r");
+			me->inCom->printf("?C\r"); //TODO: use cRBTRS232ProtocolWrapper api
 			if (numberOfLoops++ > 10)
 				break;
 			lastTime = currentTime;
@@ -96,23 +94,28 @@ TEST TestHandleRBTSerial_cIMUOdometry() {
 }
 
 void DebugLog_cIMUOdometry(cIMUOdometry* me) {
+	static char myBuff[100];
 	static uint32_t lastTime = 0;
 	uint32_t currentTime = HAL_GetTick();
 	uint32_t deltaTime = currentTime - lastTime;
-	if (deltaTime > 1000) {
+	if (deltaTime > DEBUG_PRINT_PERIOD) {
 		DEBUG(LOG_DEBUG, "c=%d:%d\r\n", me->counter[0], me->counter[1]);
-		char myBuff[100];
-		sprintf(myBuff, "o=%d,%d,%d,%d\r\n", (int32_t) me->thetaDegree,
-				(int32_t) me->distance, (int32_t)(me->XOutput/32),
-				(int32_t)(me->YOutput/32));
+
+		sprintf(myBuff, "o=%d,%d,%d,%d\r\n", (int32_t)(me->thetaDegree * 100),
+				(int32_t) me->distance, (int16_t)(me->XOutput),
+				(int16_t)(me->YOutput));
 		DEBUG(LOG_DEBUG, myBuff, 0);
+
 //		DEBUG(LOG_DEBUG, "index=%d\r\n", i2cDataIndex);
-		sprintf(myBuff, "m=%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,\r\n", (int32_t) memory[0],
-				(int32_t) memory[1], (int32_t) memory[2], (int32_t) memory[3],
+//		sprintf(myBuff, "m=%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,\r\n",
+//				(int32_t) memory[0], (int32_t) memory[1], (int32_t) memory[2],
+//				(int32_t) memory[3], (int32_t) memory[4], (int32_t) memory[5],
+//				(int32_t) memory[6], (int32_t) memory[7], (int32_t) memory[8],
+//				(int32_t) memory[9], (int32_t) memory[10], (int32_t) memory[11],
+//				(int32_t) memory[12]);
+		sprintf(myBuff, "m=%x,%x,%x,%x,%x,%x\r\n", (int32_t) memory[3],
 				(int32_t) memory[4], (int32_t) memory[5], (int32_t) memory[6],
-				(int32_t) memory[7], (int32_t) memory[8], (int32_t) memory[9],
-				(int32_t) memory[10], (int32_t) memory[11],
-				(int32_t) memory[12]);
+				(int32_t) memory[7], (int32_t) memory[8]);
 		DEBUG(LOG_DEBUG, myBuff, 0);
 		lastTime = currentTime;
 	}
@@ -125,7 +128,7 @@ TEST TestConvertCounterToXYZ_cIMUOdometry() {
 	while (1) {
 		uint32_t currentTime = HAL_GetTick();
 		int deltaTime = currentTime - lastTime;
-		if (deltaTime > 50) {
+		if (deltaTime > RBT_QUERY_PERIOD) {
 			me->inCom->printf("?C\r");
 			lastTime = currentTime;
 		}
@@ -134,12 +137,10 @@ TEST TestConvertCounterToXYZ_cIMUOdometry() {
 	}
 	PASS();
 }
-TEST TestHandleMasterMsg_cIMUOdometry();
-TEST TestSendXYZ_cIMUOdometry();
 
 SUITE(TestSuitecIMUOdometry)
 {
-	Setup_TestcIMUOdometry(NULL);
+	Setup_TestcIMUOdometry (NULL);
 //	RUN_TEST(TestI2CPort_cIMUOdometry);
 //	RUN_TEST(TestSerialPort_cIMUOdometry);
 //	RUN_TEST(TestHandleRBTSerial_cIMUOdometry);

@@ -4,8 +4,8 @@
 <window>
 <fastViewData fastViewLocation="1024">
 <orientation position="512" view="org.eclipse.debug.ui.ExpressionView"/>
-<orientation position="512" view="org.coocox.codebugger.trace.ui.traceview"/>
 <orientation position="512" view="org.eclipse.debug.ui.RegisterView"/>
+<orientation position="512" view="org.coocox.codebugger.trace.ui.traceview"/>
 <orientation position="512" view="org.eclipse.debug.ui.VariableView"/>
 </fastViewData>
 <perspectiveBar/>
@@ -22,37 +22,42 @@
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" partName="stm32f4xx_it.c" path="E:/HopeProject/minecraft/hmc5883lEmulator/stm32f4xx_it.c" title="stm32f4xx_it.c" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/stm32f4xx_it.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/stm32f4xx_it.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="98" selectionTopPixel="502"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="249" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="TestcIMUOdometry.cpp" partName="TestcIMUOdometry.cpp" path="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp" title="TestcIMUOdometry.cpp" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3105" selectionTopPixel="930"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2837" selectionTopPixel="1770"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="cIMUOdometry.cpp" partName="cIMUOdometry.cpp" path="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp" title="cIMUOdometry.cpp" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1261" selectionTopPixel="532"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="1810" selectionTopPixel="922"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="cIMUOdometry.h" partName="cIMUOdometry.h" path="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/cIMUOdometry.h" title="cIMUOdometry.h" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/imuOdometry/cIMUOdometry.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="294" selectionTopPixel="190"/>
+<editorState selectionHorizontalPixel="0" selectionLength="17" selectionOffset="856" selectionTopPixel="252"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" partName="main.cpp" path="E:/HopeProject/minecraft/hmc5883lEmulator/main.cpp" title="main.cpp" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/main.cpp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/sources/main.cpp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="581" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="cDebugUart.h" partName="cDebugUart.h" path="E:/HopeProject/minecraft/hmc5883lEmulator/myLib/stm32f4/cDebugUart.h" title="cDebugUart.h" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/myLib/stm32f4/cDebugUart.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/myLib/cDebugUart.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="601" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="generalUtility.h" partName="generalUtility.h" path="E:/HopeProject/minecraft/hmc5883lEmulator/myLib/generalUtility.h" title="generalUtility.h" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/myLib/generalUtility.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/myLib/generalUtility.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="203" selectionTopPixel="0"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" partName="main.h" path="E:/HopeProject/minecraft/hmc5883lEmulator/main.h" title="main.h" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/main.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/main.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="138" selectionTopPixel="0"/>
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="deviceConfig.h" partName="deviceConfig.h" path="E:/HopeProject/minecraft/hmc5883lEmulator/deviceConfig.h" title="deviceConfig.h" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/deviceConfig.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/deviceConfig.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="29" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="615" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="generalUtility.h" partName="generalUtility.h" path="E:/HopeProject/minecraft/hmc5883lEmulator/myLib/generalUtility.h" title="generalUtility.h" tooltip="E:/HopeProject/minecraft/hmc5883lEmulator/myLib/generalUtility.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/hmc5883lEmulator/myLib/generalUtility.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="237" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -95,9 +100,10 @@
 </viewState>
 </view>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="20">
 <expanded>
 <element path="/hmc5883lEmulator"/>
+<element path="/hmc5883lEmulator/myLib"/>
 <element path="/hmc5883lEmulator/sources"/>
 </expanded>
 <selection>
@@ -319,170 +325,168 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/sources/main.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/myLib/cAssert.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/main.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/sources/main.cpp"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/stm32f4xx_it.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/myLib/generalUtility.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/myLib/cDebugUart.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/main.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/sources/main.cpp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/myLib/cAssert.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/deviceConfig.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2015q3\arm-none-eabi\include\math.h" project="hmc5883lEmulator"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/myLib/generalUtility.h"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/hmc5883lEmulator/deviceConfig.h"/>
 </editors>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="3605" y="0"/>
+<item historyLabel="stm32f4xx_it.c" index="1">
+<position info="not_deleted" x="3046" y="0"/>
 </item>
-<item historyLabel="main.cpp" index="2">
-<position info="not_deleted" x="744" y="0"/>
+<item historyLabel="cDebugUart.h" index="2">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="3605" y="0"/>
+<item historyLabel="stm32f4xx_it.c" index="1">
+<position info="not_deleted" x="3046" y="0"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="1294" y="28"/>
+<item historyLabel="stm32f4xx_it.c" index="1">
+<position info="not_deleted" x="3046" y="0"/>
 </item>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="3605" y="0"/>
+<item historyLabel="stm32f4xx_it.c" index="1">
+<position info="not_deleted" x="3046" y="0"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="1673" y="8"/>
+<item historyLabel="cIMUOdometry.cpp" index="0">
+<position info="not_deleted" x="2123" y="0"/>
 </item>
-<item historyLabel="cAssert.h" index="3">
+<item historyLabel="stm32f4xx_it.c" index="1">
+<position info="not_deleted" x="3046" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="1">
+<position info="not_deleted" x="463" y="2"/>
+</item>
+<item historyLabel="cDebugUart.h" index="2">
+<position info="not_deleted" x="601" y="12"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="1">
+<position info="not_deleted" x="463" y="2"/>
+</item>
+<item historyLabel="main.h" index="3">
+<position info="not_deleted" x="138" y="9"/>
+</item>
+<item historyLabel="cAssert.h" index="4">
 <position info="not_deleted" x="423" y="9"/>
 </item>
-<item historyLabel="main.h" index="4">
-<position info="not_deleted" x="147" y="0"/>
+<item historyLabel="main.h" index="3">
+<position info="not_deleted" x="138" y="9"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="1673" y="8"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="3928" y="17"/>
 </item>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="2812" y="0"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="3954" y="21"/>
 </item>
-<item historyLabel="main.cpp" index="2">
-<position info="not_deleted" x="744" y="0"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2607" y="18"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="1673" y="8"/>
+<item historyLabel="deviceConfig.h" index="6">
+<position info="not_deleted" x="109" y="18"/>
 </item>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="2812" y="0"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2607" y="18"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="1832" y="0"/>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="2123" y="0"/>
 </item>
-<item historyLabel="main.cpp" index="5">
-<position info="not_deleted" x="744" y="0"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="3821" y="0"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="1832" y="0"/>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="2123" y="0"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="2312" y="0"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2691" y="0"/>
 </item>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="2812" y="0"/>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="1219" y="4"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="2312" y="0"/>
+<item historyLabel="math.h" index="8">
+<position info="not_deleted" x="9818" y="4"/>
 </item>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="3335" y="0"/>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="1219" y="4"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="2312" y="0"/>
+<item historyLabel="cIMUOdometry.h" index="9">
+<position info="not_deleted" x="856" y="17"/>
 </item>
-<item historyLabel="main.cpp" index="5">
-<position info="not_deleted" x="744" y="0"/>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="667" y="25"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="2312" y="0"/>
-</item>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="3335" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="6">
-<position info="not_deleted" x="98" y="0"/>
-</item>
-<item historyLabel="generalUtility.h" index="7">
+<item historyLabel="deviceConfig.h" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="generalUtility.h" index="7">
-<position info="not_deleted" x="239" y="0"/>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="667" y="25"/>
 </item>
-<item historyLabel="generalUtility.h" index="7">
-<position info="not_deleted" x="228" y="0"/>
-</item>
-<item historyLabel="generalUtility.h" index="7">
-<position info="not_deleted" x="203" y="12"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="6">
-<position info="not_deleted" x="98" y="0"/>
-</item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="2312" y="0"/>
-</item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="144" y="0"/>
-</item>
-<item historyLabel="cIMUOdometry.cpp" index="1">
-<position info="not_deleted" x="2218" y="12"/>
-</item>
-<item historyLabel="generalUtility.h" index="7">
-<position info="not_deleted" x="239" y="0"/>
-</item>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="3335" y="0"/>
-</item>
-<item historyLabel="main.h" index="8">
-<position info="not_deleted" x="147" y="0"/>
-</item>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="3105" y="0"/>
-</item>
-<item historyLabel="main.cpp" index="9">
+<item historyLabel="deviceConfig.h" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="cIMUOdometry.h" index="10">
-<position info="not_deleted" x="294" y="12"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2691" y="0"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="11">
-<position info="not_deleted" x="2211" y="12"/>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="667" y="25"/>
 </item>
-<item historyLabel="generalUtility.h" index="12">
-<position info="not_deleted" x="203" y="12"/>
+<item historyLabel="deviceConfig.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="11">
-<position info="not_deleted" x="2185" y="0"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2691" y="0"/>
 </item>
-<item historyLabel="deviceConfig.h" index="13">
-<position info="not_deleted" x="2" y="0"/>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="667" y="25"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="11">
-<position info="not_deleted" x="2185" y="0"/>
+<item historyLabel="deviceConfig.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="deviceConfig.h" index="13">
-<position info="not_deleted" x="694" y="0"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2691" y="0"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="11">
-<position info="not_deleted" x="2185" y="0"/>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="667" y="25"/>
 </item>
-<item historyLabel="deviceConfig.h" index="13">
-<position info="not_deleted" x="442" y="0"/>
+<item historyLabel="deviceConfig.h" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="TestcIMUOdometry.cpp" index="0">
-<position info="not_deleted" x="3105" y="0"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2691" y="0"/>
 </item>
-<item historyLabel="cIMUOdometry.cpp" index="11">
-<position info="not_deleted" x="1261" y="0"/>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="667" y="25"/>
 </item>
-<item active="true" historyLabel="deviceConfig.h" index="13">
-<position info="not_deleted" x="442" y="0"/>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2772" y="0"/>
+</item>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="667" y="25"/>
+</item>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2837" y="0"/>
+</item>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="1810" y="12"/>
+</item>
+<item historyLabel="generalUtility.h" index="10">
+<position info="not_deleted" x="237" y="0"/>
+</item>
+<item historyLabel="deviceConfig.h" index="6">
+<position info="not_deleted" x="32" y="0"/>
+</item>
+<item historyLabel="cIMUOdometry.cpp" index="7">
+<position info="not_deleted" x="1810" y="12"/>
+</item>
+<item historyLabel="TestcIMUOdometry.cpp" index="5">
+<position info="not_deleted" x="2837" y="0"/>
+</item>
+<item active="true" historyLabel="deviceConfig.h" index="11">
+<position info="not_deleted" x="30" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -491,26 +495,35 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cIMUOdometry.cpp" tooltip="hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp">
+<persistable path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="deviceConfig.h" tooltip="hmc5883lEmulator/deviceConfig.h">
 <persistable path="/hmc5883lEmulator/deviceConfig.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="generalUtility.h" tooltip="hmc5883lEmulator/myLib/generalUtility.h">
 <persistable path="/hmc5883lEmulator/myLib/generalUtility.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="hmc5883lEmulator/sources/main.cpp">
-<persistable path="/hmc5883lEmulator/sources/main.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="hmc5883lEmulator/main.h">
-<persistable path="/hmc5883lEmulator/main.h"/>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="math.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2015q3\arm-none-eabi\include\math.h">
+<persistable path="C:\Program Files (x86)\GNU Tools ARM Embedded\4.9 2015q3\arm-none-eabi\include\math.h" project="hmc5883lEmulator"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cAssert.h" tooltip="hmc5883lEmulator/myLib/cAssert.h">
 <persistable path="/hmc5883lEmulator/myLib/cAssert.h"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="hmc5883lEmulator/main.h">
+<persistable path="/hmc5883lEmulator/main.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cDebugUart.h" tooltip="hmc5883lEmulator/myLib/cDebugUart.h">
+<persistable path="/hmc5883lEmulator/myLib/cDebugUart.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cRBTRS232ProtocolWrapper.cpp" tooltip="hmc5883lEmulator/RBTRS232Protocol/cRBTRS232ProtocolWrapper.cpp">
+<persistable path="/hmc5883lEmulator/RBTRS232Protocol/cRBTRS232ProtocolWrapper.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="hmc5883lEmulator/sources/main.cpp">
+<persistable path="/hmc5883lEmulator/sources/main.cpp"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="hmc5883lEmulator/stm32f4xx_it.c">
 <persistable path="/hmc5883lEmulator/stm32f4xx_it.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cIMUOdometry.cpp" tooltip="hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp">
-<persistable path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.cpp"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2CSlave1.cpp" tooltip="hmc5883lEmulator/i2cSlave/I2CSlave1.cpp">
 <persistable path="/hmc5883lEmulator/i2cSlave/I2CSlave1.cpp"/>
@@ -526,15 +539,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_gpio.h" tooltip="hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f4xx_hal_gpio.h">
 <persistable path="/hmc5883lEmulator/headers/mbed/TARGET_NUCLEO_F411RE/stm32f4xx_hal_gpio.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="cIMUOdometry.h" tooltip="hmc5883lEmulator/imuOdometry/cIMUOdometry.h">
-<persistable path="/hmc5883lEmulator/imuOdometry/cIMUOdometry.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="TestcIMUOdometry.cpp" tooltip="hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp">
-<persistable path="/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="TestcIMUOdometry.cpp" tooltip="hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp">
-<persistable path="/hmc5883lEmulator/imuOdometry/TestcIMUOdometry.cpp"/>
 </file>
 </mruList>
 </workbench>
